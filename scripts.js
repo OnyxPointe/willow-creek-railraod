@@ -1,19 +1,4 @@
-// CAROUSEL SLIDER
-// $(document).ready(function(){
-//   $('.slider-container').slick({
-//     autoplay: true,
-//     autoplaySpeed: 3000,
-//     speed: 200,
-//     arrows: true,
-//     accessibility: true,
-//     dots: true, 
-//     fade: true,
-//     infinite: true,
-//     pauseOnHover: true,
-//     pauseOnDotHover: true
-//   });
-// });
-
+// ------------CAROUSEL SLIDER
 $(document).ready(function(){
   $('.slider-container').slick({
     autoplay: true,
