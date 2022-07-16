@@ -54,10 +54,9 @@ h6:last-child{
 }
 
 h1{
-    /* color:#FFFFFF; */
     font-size:1.8rem;
     font-weight:800;
-    line-height: 1;
+    line-height: 1.2;
     font-family: 'Martel', serif;
     text-transform: uppercase;
     margin-bottom:.5rem;
@@ -65,14 +64,16 @@ h1{
 
 h2{
     font-weight:800;
-    font-size:1.7rem;
+    font-size:1.6rem;
     /* color:white; */
      /* color:#E20806; */
      font-family: 'Martel', serif;
     text-transform: uppercase;
 }
 
-h3{     font-family: 'Martel', serif;
+h3{ 
+    font-family: 'Martel', serif;
+    font-size:    1.3rem;
     font-weight:800;
     text-transform: uppercase;
 }
@@ -131,7 +132,7 @@ nav a{
     font-size:1rem;
     font-weight:400;
     margin:0 0.25rem;
-    padding: 1% 1.5%;
+    padding: .7% 1.5% 1%;
      text-shadow: 1px 1px 4px rgb(140, 140, 140);
      text-transform: uppercase;
     display: inline-block;
@@ -147,9 +148,42 @@ ul{
 .header{background-color: #D7CCC2;
 }
 .logo-img{
+    padding-top:1%;
     margin:1% 0 0; 
-    max-height:6rem;}
-.train-track{min-height:2.3rem;
+    max-height:5.5rem;}
+.train-track{
+    max-height:2.3rem;
+margin-bottom:0;
+background-image;
+/* Spadding-bottom:0; */
+}
+
+/* ---------------------------------------BACKGROUND IMAGES------------- */
+/* --------------------INDEX INTRO CAROUSEL */
+.bg-image{
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.bg-image-one{background-image:url('images/bg-image-1.jpeg');
+padding-bottom:66%;}
+
+.bg-image-two{background-image: url('images/bg-image-2.jpeg');
+padding-bottom:66%;}
+
+.bg-image-three{background-image: url('images/bg-image-3.jpeg');
+padding-bottom:66%;}
+
+.bg-image-four{background-image: url('images/bg-image-4.jpeg');
+padding-bottom:66%;}
+
+.bg-train-track{
+    background-image:url('images/train-track-three.png');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    min-height:2.4rem;
 margin-bottom:0;}
 
 .centered{text-align: center;}
@@ -159,12 +193,19 @@ margin-bottom:0;}
 .padded-sm{padding:2.5%;}
 .padded-r-8{padding-right:8%;}
 .padded-sm-lr{padding:5% 2.5%;}
+.padded-sm-tb{padding:2.5% 5%;}
 .padded-xs-tb{padding:1.5% 0;}
 .padded-xs{padding:1.5%;}
 .padded-l-5{padding-left:5%;}
+.padded-trb{padding:5% 5% 5% 0;}
+
+.header{
+    min-height:25vh;
+    text-align:center;
+}
 
 .banner{
-    background-image: url('/images/train.png');
+    /* background-image: url('/images/train.png'); */
     background-position: center;
     background-repeat: none;
     background-size: cover;
@@ -172,16 +213,21 @@ margin-bottom:0;}
     min-height:40vh;
 }
 
-.underline{text-decoration: underline;
-    padding:1% 0;
-}
+.underlined{text-decoration: underline;}
 .tall-25{min-height: 25vh;}
 .tall-70{height: 70vh;}
 .tall-55{height: 55vh}
 
+.shadow{    box-shadow:10px 10px 20px 0px rgba(100, 100, 111, 0.2) ;
+}
+
+.border{border:3px solid #000000;
+}
+
+
 .btn-green{background-color:#1C9C42;
 border-radius: 8px;
-padding:1.5% 3.5%;
+padding:1.7% 3.5% 1.5%;
 margin:1% 0;
 text-transform: uppercase;
 font-family: 'Martel', serif;
@@ -192,11 +238,15 @@ font-size:.85rem;
 .btn-grey{background-color:#606060;
     color:#FFFFFF;
 border-radius:8px;
-padding:2.1% 5% 2%;
-margin:3.5% 0;
+padding:2.3% 5% 2%;
+margin:4% 0;
 text-transform: uppercase;
 font-family: 'Martel', serif;
 font-size:.85rem;
+}
+
+.btn-grey:hover{background-color:#FFF100;
+    color:#000000;
 }
 
 .bg-grey{background-color:#606060;
@@ -224,7 +274,8 @@ font-size:.85rem;
 }
 
 .fa-solid{color:#1C9C42;
-font-size:2rem;}
+font-size:2.5rem;
+padding:7%;}
 
 .bg-image-rr-sign{background-image: url('/images/bg-image-rr-sign.jpeg');
 background-position: center;
@@ -297,3 +348,65 @@ form button:hover{
 form textarea{min-height: 8rem;}
 
 .gallery-banner-title{background: #D7CCC2;}
+
+/* .landscape{padding-bottom:66%;} */
+
+/* Slider */
+/* Background-Images */
+.bg-image{
+  background-size:cover;
+  background-position: top;
+  background-color:grey;
+  height:70vh;
+}
+
+.bg-2{background-image:url('/images/bg-image-1.jpeg')}
+.bg-3{background-image:url('/images/bg-image-2.jpeg')}
+
+/* .landscape{padding-bottom:66%;} */
+div.slider-item{padding:4px 0 0;}
+/* Slider */
+.slider-container{
+  padding:0;
+}
+
+
+.slider-item{
+  padding:1rem;
+  display:none;
+}
+
+.slider-item:first-child{display:block;}
+
+.slick-next{
+  right: 2.5%;
+}
+
+.slick-prev{
+  left: 2.5%;
+  z-index:2;
+}
+
+/* Without this the padding on the parent affects the centering of the dots. Do not delete */
+.slick-dots{
+  left:0; 
+  bottom:10px;
+}
+
+.slick-dots li{
+  width: 9px;
+}
+
+.slick-dots li button::before{
+  color:#EFEFEF;
+}
+
+.slick-dots li.slick-active button::before{
+  color:#EFEFEF;
+}
+
+.slick-next::before, .slick-prev::before{
+  opacity: .75;
+  color:#EFEFEF;
+}
+
