@@ -57,7 +57,7 @@ h1{
     font-size: 1.8rem;
     font-weight: 800;
     line-height: 1.2;
-    margin-bottom: .5rem;
+    /* margin-bottom: .5rem; home page intro*/
     text-transform: uppercase;
 }
 
@@ -91,7 +91,8 @@ h6{
 }
 
 p{
-    font-size: 1rem; 
+    font-size: 1.1rem; 
+    font-weight:400;
     line-height: 1.4;
     margin-bottom: 1rem;
 }
@@ -107,7 +108,7 @@ a{
 }
 
 a:hover{
-    /* color:#EB1A21; */
+    color:#EB1A21;
     -webkit-transition: .1s ease-in-out;
     -moz-transition: .1s ease-in-out;
     -ms-transition: .1s ease-in-out;
@@ -119,6 +120,7 @@ p a{
     border-bottom: 1px solid;
     color: inherit;
     display: inline;
+    line-height:1;
 }
 
 nav a{
@@ -132,13 +134,17 @@ nav a{
     text-transform: uppercase;
 }
 
-nav a:hover{color:#EB1A21;}
-
 ul{
     line-height: 2;
     list-style-type: none; 
     margin-bottom:1%;
     padding-left:6%;  
+}
+
+ul a{
+    border-bottom: 1px solid;
+    color: inherit;
+    line-height:1
 }
 
 hr{
@@ -150,7 +156,15 @@ hr{
 .centered{text-align: center;}
 .right{text-align:right;}
 
-.underlined{text-decoration: underline;}
+.underlined{
+    border-bottom: 2px solid #000000;
+    margin-bottom: 1rem;
+}
+
+.underlined-yellow{
+    border-bottom: 3px solid #FFF100;
+    margin-bottom: 1rem;
+}
 
 
 /* --------------------EFFECTS */
@@ -163,6 +177,7 @@ hr{
 .padded{padding:5%;}
 .padded-sm{padding:2.5%;}
 .padded-r-8{padding-right:8%;}
+.padded-r-15{padding-right:15%;}
 .padded-sm-lr{padding:5% 2.5%;}
 .padded-sm-tb{padding:2.5% 5%;}
 .padded-xs-tb{padding:1.5% 0;}
@@ -194,6 +209,7 @@ hr{
 
 .btn-green:hover{
     background-color: #606060;
+    color:#FFFFFF;
     -webkit-transition: .25s ease-in-out;
     -moz-transition: .25s ease-in-out;
     -ms-transition: .25s ease-in-out;
@@ -316,7 +332,7 @@ height: 50vh;}
 
 
 /* --------------------FOOTER */
-footer{
+footer p{
     font-size: .8rem;
     padding: .5% 1% .5% 0;
 }
