@@ -137,7 +137,7 @@ nav a{
 ul{
     line-height: 2;
     list-style-type: none; 
-    margin-bottom:1%;
+    margin-bottom:1rem;
     padding-left:6%;  
 }
 
@@ -155,6 +155,11 @@ hr{
 .left{text-align: left;}
 .centered{text-align: center;}
 .right{text-align:right;}
+
+.big-text{
+    font-size:2.5rem;
+    font-weight:700;
+}
 
 .underlined{
     border-bottom: 2px solid #000000;
@@ -284,10 +289,23 @@ hr{
 }
 
 .bg-image-four{
-     background-image:url('/images/bg-image-2.jpeg');
+    background-image:url('/images/bg-image-2.jpeg');
     background-position: top;
     height:70vh;
 } 
+
+/* --------------------CONTACT */
+.bg-image-group{
+    background-image: url('/images/wcrr-group-photo.jpeg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    border:4px solid #000000;
+    box-shadow:0px 7px 29px 0px rgba(100, 100, 111, 0.2); 
+    height: 50vh;
+}
+
+
 
 
 /* TODO */
@@ -298,11 +316,7 @@ background-repeat: none;
 background-size: cover;}
 
 
-.bg-image-group{background-image: url('/images/bg-image-rr-sign.jpeg');
-background-position: center;
-background-repeat: none;
-background-size: cover;
-height: 50vh;}
+
 
 
 .banner{
@@ -325,7 +339,7 @@ height: 50vh;}
 }
 
 .logo-img{
-    margin:1% 0 0; 
+    margin:1rem 0 0; 
     max-height:5.5rem;
     padding-top:1%;
 }
@@ -427,12 +441,13 @@ form button{
   min-height: 2.3rem;
   padding: 0.5rem 2rem;
   text-transform: uppercase;
-  width: 20%;  
 }
 
 form button:hover{
     background-color:#606060;
+    border:1px solid #FFFFFF;
     color:#FFFFFF;
+    cursor: pointer;
     -webkit-transition: .25s ease-in-out;
     -moz-transition: .25s ease-in-out;
     -ms-transition: .25s ease-in-out;
@@ -462,3 +477,75 @@ form textarea{min-height: 8rem;}
     /* min-height:50vh; */
     padding: 8.5% 2%;
 }
+
+
+
+
+/* ----------------------------------------MEDIA QUERIES------------- */
+/* --------------------DEFAULT RESPONSIVE STYLES */
+
+/* .hide{display:none;} */
+/* .sm-show{display: none;} */
+
+/* --------------------LG MEDIA QUERY (128em / 2048px) */
+@media(max-width:128em){
+}
+
+@media(max-width:75em){
+}
+
+/* --------------------MD MEDIA QUERY (64em / 1024px) */
+@media(max-width:64em){
+    /* -----------GENERAL CLASSES */
+    html{ font-size:15px; }
+    .md-show{display:block;}
+    .md-hide{display: none;}
+    .flip{flex-direction: column-reverse;}
+
+    /* -----------PADDING + MARGIN */
+    .md-padded-b{padding-bottom:5%;}
+
+    /* -----------BACKGROUND IMAGES */
+    /* .bg-image-one{height:50vh;} */
+    /* .bg-image-two{height:50vh;} */
+    /* .bg-image-three{height:50vh;} */
+    /* .bg-image-four{height:50vh;}  */
+
+}
+
+/* --------------------SM Media Query (48em / 768px) */
+@media(max-width:48em){
+    /* -----------GENERAL CLASSES */
+    .sm-show{display:block;}   
+    .sm-hide{display: none;}
+    .sm-pos-static{position: static;}
+
+    /* -----------TYPOGRAPHY */
+
+    /* -----------PADDING + MARGIN */
+
+    /* -----------TESTIMONIALS */
+
+    /* -----------BUTTONS */
+
+    /* -----------BACKGROUNDS */
+
+    /* -----------INDEX */
+
+    /* -----------HOME*/
+
+    /* -----------PORTFOLIO */
+
+    /* -----------CONTACT */
+
+}
+
+/* --------------------XS Media Query (36em / 576px) */
+@media (max-width: 36em) {
+    .xs-hide{display: none;}
+    .xs-show {display: block;}
+}
+
+/* --------------------XXS Media Query (25em / 400px) */
+/* NOT part of default Gridlex styling */
+/* @media (max-width: 25em) {} */ 
