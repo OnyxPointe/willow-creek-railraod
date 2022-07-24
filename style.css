@@ -349,10 +349,53 @@ background-size: cover;}
 
 
 /* ---------------------------------------SECTION/PAGE SPECIFIC------------- */
+
+/* --------------------HAMBURGER MENU */
+.hamburger-button{
+  padding: 0 1rem;
+  display:inline-block;
+  font-weight:400;
+  font-size: 2.5rem;
+  cursor:pointer;
+  text-decoration:none;
+  color: inherit;
+  margin-top:-0.3rem; /*Helps center hamburger symbol*/
+  margin-bottom:.75rem;
+}
+
+.hamburger-button.active{
+  color:#EB1A21;
+}
+
+.mobile-menu{
+  background-color: #B9ADA2;
+  padding:5%;
+  display:none;
+  text-align:center;
+}
+
+.mobile-menu a{
+  text-decoration:none;
+  color:inherit;
+  padding: 2.5vh;
+  display:block;
+    font-size:1.2rem;
+}
+
+.mobile-menu a:hover{
+  color:#EB1A21;
+}
+
+
+/* Default Responsive Styles (Desktop and below) */
+.mobile-show{display:none;}
+
+
+
 /* --------------------HEADER */
 .header{
     background-color: #D7CCC2;
-    min-height:25vh;
+    min-height:20vh;
     text-align:center;
 }
 
@@ -600,18 +643,29 @@ form textarea{min-height: 8rem;}
 
 /* --------------------SM Media Query (48em / 768px) */
 @media(max-width:48em){
+
+
+  .mobile-hide{display: none;}
+  .mobile-show{display:block;}
+
     /* -----------GENERAL CLASSES */
     html{ font-size:14px; }
     .sm-show{display:block;}   
     .sm-hide{display: none;}
     .sm-pos-static{position: static;}
     .flip-sm{flex-direction: column-reverse;}
+    .sm-left{text-align: left;}
 
     /* -----------TYPOGRAPHY */
 
     /* -----------PADDING + MARGIN */
 
-    /* -----------TESTIMONIALS */
+    /* -----------HEADER */
+    .logo-img{margin: 1rem 2rem;}
+
+    .header{
+        min-height:15vh;
+    }
 
     /* -----------INDEX */
     .bullet-points div{padding:7% 3%;}
