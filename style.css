@@ -15,6 +15,9 @@ img{max-width:100%;}
 
 .overflow-x{overflow-x: hidden;}
 
+.hide{display: none;}
+
+
 /* div, section{border: 1px solid yellow;} */
 
 /* ---------------------------------------UTILITY/GENERAL CLASSES + STYLES------------- */
@@ -187,12 +190,13 @@ hr{
 .padded-r-15{padding-right:15%;}
 /* contact */
 .padded-sm-lr{padding:5% 2.5%;}
+/* embedded video intro */
 .padded-sm-tb{padding:2.5% 5%;}
 .padded-xs-tb{padding:1.5% 0;}
 .padded-xs{padding:1.5%;}
 .padded-l-5{padding-left:5%;}
 .padded-trb{padding:5% 5% 5% 0;}
-
+/* no longer embedded video intro */
 .margin-b-5{margin-bottom:.5rem;}
 .margin-top-1{margin-top:2rem;}
 
@@ -367,10 +371,13 @@ footer p{
 
 
 /* --------------------INDEX */
+.index-intro{padding:5% 5% 5% 0;}
+.index-intro h1{margin-bottom:.5rem;}
+
 .fa-solid{
     color:#1C9C42;
     font-size:2.5rem;
-    padding:7%;
+    padding:2rem;
 }
 
 /* --------------------SLICK SLIDER */
@@ -558,6 +565,10 @@ form textarea{min-height: 8rem;}
     /* -----------FOOTER */
     footer p{padding: .75% 1% 1.25% 0;}
 
+    /* -----------INDEX */
+    .index-intro{padding:3.5% 5% 4.5%;}
+
+
     /* -----------DONATIONS */
     .donations h1{font-size: 1.5rem;}
     .donations h2{font-size:1.5rem;}
@@ -602,7 +613,8 @@ form textarea{min-height: 8rem;}
 
     /* -----------TESTIMONIALS */
 
-    /* -----------BUTTONS */
+    /* -----------INDEX */
+    .bullet-points div{padding:7% 3%;}
 
     /* -----------BACKGROUNDS */
     .bg-membership{background-position: 95% 36%;}
