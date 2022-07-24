@@ -274,9 +274,9 @@ hr{
 
 /* --------------------HEADER */
 .bg-train-track{
-    background-image:url('images/train-track-three.png');
+    background-image:url('images/train-track-four.png');
     background-repeat: none;
-    background-size: contain;
+    /* background-size: contain; */
     min-height:2.4rem;
     margin-bottom:0;
 }
