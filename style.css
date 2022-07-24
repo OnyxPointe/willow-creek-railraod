@@ -596,7 +596,7 @@ form textarea{min-height: 8rem;}
     .flip-md{flex-direction: column-reverse;}
 
     /* -----------PADDING + MARGIN */
-    .md-padded-b{padding-bottom:5%;}
+    /* .contact-img{margin-bottom:40rem;} */
     /* contact */
 
     /* -----------BACKGROUND IMAGES */
@@ -623,7 +623,7 @@ form textarea{min-height: 8rem;}
     .bg-image-group{
         height: 45vh;
         width:80vw;
-        margin-bottom:1rem;
+        margin-bottom:3.25rem;
     }
 
     /* -----------MEMBERSHIP */
@@ -666,7 +666,7 @@ form textarea{min-height: 8rem;}
     .header{
         min-height:15vh;
     }
-
+    .map{padding:15% 10%;}
     /* -----------INDEX */
     .bullet-points div{padding:7% 3%;}
 
@@ -677,8 +677,10 @@ form textarea{min-height: 8rem;}
     .donorbox{padding:10% 0;}
 
     /* -----------CONTACT */
-    .contact-intro{padding:10% 5%;}
-    .bg-image-group{height: 33vh;}
+    .contact-intro{padding:10% 5% 20%;}
+    .bg-image-group{height: 33vh;
+        width:80vw;    }
+    .contact-form{padding:10% 5%;}
 
     /* -----------MEMBERSHIP */
     .login-section{height: auto;}
