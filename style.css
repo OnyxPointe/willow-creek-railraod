@@ -160,6 +160,8 @@ hr{
 .centered{text-align: center;}
 .right{text-align:right;}
 
+.md-text{font-size:1.7rem;}
+
 .big-text{
     font-size:2.4rem;
     font-weight:700;
