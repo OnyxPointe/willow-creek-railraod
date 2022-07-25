@@ -360,7 +360,7 @@ background-size: cover;}
   text-decoration:none;
   color: inherit;
   margin-top:-0.3rem; /*Helps center hamburger symbol*/
-  margin-bottom:.75rem;
+  margin-bottom:.5rem;
 }
 
 .hamburger-button.active{
@@ -529,7 +529,8 @@ form textarea{min-height: 8rem;}
 
 
 /* --------------------MEMBERSHIP */
-.login-section{height:75vh;}
+.login-section{height:75vh;
+position:relative;}
 
 .become-member{
     background-color:#606060;
@@ -655,13 +656,15 @@ form textarea{min-height: 8rem;}
     .sm-pos-static{position: static;}
     .flip-sm{flex-direction: column-reverse;}
     .sm-left{text-align: left;}
+    .sm-right{text-align: right;}
 
     /* -----------TYPOGRAPHY */
 
     /* -----------PADDING + MARGIN */
 
     /* -----------HEADER */
-    .logo-img{margin: 1rem 2rem;}
+    .logo-img{margin: 0 2rem;
+    height:20vh;}
 
     .header{
         min-height:15vh;
@@ -683,21 +686,24 @@ form textarea{min-height: 8rem;}
     .contact-form{padding:10% 5%;}
 
     /* -----------MEMBERSHIP */
-    .login-section{height: auto;}
+    .login-section{height: 105vh;}
 
     .become-member{
         border-radius: 0 25px 25px 0;
-        box-shadow:7px 7px 29px 0px rgba(100, 100, 111, 0.2); 
+        box-shadow:7px 7px 20px 0px rgba(100, 100, 111, 0.2); 
         margin: 4% 0 8%;
         padding:7% 8% 7% 5%;
         /* position:absolute;
         left: 0; */
         height:60vh;
+        position:absolute;
+        left:0;
+        bottom:10px;
     }
 
     .member-login{
         border-radius: 25px 0 0 25px;
-        box-shadow:-7px 7px 29px 0px rgba(100, 100, 111, 0.2);
+        box-shadow:-7px 7px 20px 0px rgba(100, 100, 111, 0.2);
         margin: 8% 0 4%;
         height: auto;
         padding: 6.5% 5% 5%;
@@ -705,6 +711,9 @@ form textarea{min-height: 8rem;}
         right: 0; */
         text-align:right;
         width:80vw;
+        position:absolute;
+        right:0;
+        top: 10px;
     }
 
     .member-login h2{font-size:1.6rem;}
