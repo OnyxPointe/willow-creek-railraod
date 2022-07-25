@@ -20,3 +20,9 @@ $('.hamburger-button').click(function(){
   $('.mobile-menu').slideToggle();
   $(this).toggleClass('active');
 });
+
+// ------------POP-UP RESPONSIVE GALLERY
+lightGallery(document.getElementById('lightgallery'), {
+        speed: 500,
+        download: false
+});

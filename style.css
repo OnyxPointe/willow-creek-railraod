@@ -165,6 +165,8 @@ hr{
     font-weight:700;
 }
 
+.ex-big-text{font-size:2.8rem;}
+
 .underlined{
     border-bottom: 2px solid #000000;
     margin-bottom: 1rem;
@@ -288,31 +290,32 @@ padding-top:2.5%;}
 
 /* --------------------INDEX INTRO CAROUSEL */
 .bg-image-one{
-    background-image:url('/images/bg-image-1.jpeg');
-    background-position: top;
+    background-image:url('/images/wcrr-train-rides.jpg');
+    background-position: 50% 30%;
+    /* background-size:contain; */
     height:70vh;
 }
 .bg-image-two{
-    background-image:url('/images/bg-image-2.jpeg');
-    background-position: top;
+    background-image:url('/images/wcrr-steam.jpg');
+    background-position: 50% 20%;
     height:70vh;
 }
 
 .bg-image-three{
-    background-image:url('/images/bg-image-1.jpeg');
+    background-image:url('/images/wcrr-chip-colby.jpg');
     background-position: top;
     height:70vh;
 }
 
 .bg-image-four{
-    background-image:url('/images/bg-image-2.jpeg');
+    background-image:url('/images/steam-engine-line-up.jpg');
     background-position: top;
     height:70vh;
 } 
 
 /* --------------------CONTACT */
 .bg-image-group{
-    background-image: url('/images/wcrr-group-photo.jpeg');
+    background-image: url('/images/steam-engine-line-up.jpg');
     background-position: top;
     background-repeat: none;
     background-size: cover;
@@ -332,13 +335,44 @@ padding-top:2.5%;}
 
 /* TODO */
 .bg-image-rr-sign{
-    background-image: url('/images/members-login-background.jpg');
+    background-image: url('/images/our-history-background.jpg');
 background-position: 50% 36%;
 background-repeat: none;
 background-size: cover;}
 
 
 
+.bg-image-history-one{
+    background-image:url('/images/steamup-2011.jpg');
+height:65vh;
+border: 3px solid #000000;}
+
+.bg-image-history-two{
+    background-image: url('/images/wcrr-little-roy.jpg');
+height:65vh;
+border: 3px solid #000000;}
+
+.bg-image-history-three{
+    background-image: url('/images/wcrr-train.jpg');
+height:65vh;
+border: 3px solid #000000;}
+
+.history-title{padding: 5% 5% 0 0;
+border-bottom:2px solid #000000;}
+
+.history h2{margin-bottom:.2rem;}
+/* .history-part-one{padding-top:%;} */
+.history-text-one{        position:absolute;
+    right:330px;
+}
+.history-text-two{        position:absolute;
+    left:330px;
+}
+.history-text-three{        position:absolute;
+    right:330px;
+}
+.history-part-two{padding-top:10%;}
+.history-part-three{padding:10% 0 5%;}
 
 
 .banner{
@@ -531,6 +565,18 @@ form button:hover{
 
 form textarea{min-height: 8rem;}
 
+.bg-1 { background-image: url('https://source.unsplash.com/Sg3XwuEpybU'); }
+.bg-2 { background-image: url('https://source.unsplash.com/yihlaRCCvd4'); }
+.bg-3 { background-image: url('https://source.unsplash.com/G8cB8hY3yvU'); }
+
+
+/* Filterable Gallery Styles   */
+.gallery .bg-image {padding-bottom: 100%;}
+.gallery {padding: 1rem;}
+.gallery [class*=col] {padding: 0.1rem;}
+.hidden {display: none;}
+
+
 
 /* --------------------MEMBERSHIP */
 .login-section{height:75vh;
@@ -666,6 +712,11 @@ padding-top:2.5%;}
 
     /* -----------TYPOGRAPHY */
 
+    .bg-image-one{height:50vh;}
+    .bg-image-two{height:50vh;}
+    .bg-image-three{height:50vh;}
+    .bg-image-four{height:50vh;} 
+
     /* -----------PADDING + MARGIN */
     .sm-padded{padding:5%;}
 
@@ -700,6 +751,8 @@ right:0;}
 .sm-padded-nr{padding: 5% 0 5% 5%;}
 
 .pad-l{padding-left:5%;}
+
+
 
     /* -----------CONTACT */
     .contact-intro{padding:10% 5% 20%;}
