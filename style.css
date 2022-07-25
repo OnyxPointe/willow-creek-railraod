@@ -57,7 +57,7 @@ h6:last-child{
 
 h1{
     font-family: 'Martel', serif;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 800;
     line-height: 1.2;
     /* margin-bottom: .5rem;  */
@@ -67,7 +67,7 @@ h1{
 
 h2{
     font-family: 'Martel', serif;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     font-weight: 800;
     text-transform: uppercase;
 }
@@ -194,7 +194,9 @@ hr{
 .padded-sm-tb{padding:2.5% 5%;}
 .padded-xs-tb{padding:1.5% 0;}
 .padded-xs{padding:1.5%;}
-.padded-l-5{padding-left:5%;}
+.donator-links{padding-left:10%;
+padding-top:2.5%;}
+/* donations */
 .padded-trb{padding:5% 5% 5% 0;}
 /* no longer embedded video intro */
 .margin-b-5{margin-bottom:.5rem;}
@@ -262,6 +264,8 @@ hr{
     color:#FFFFFF;
 }
 .bg-dark-tan{background-color:#B9ADA2;}
+
+.bg-tan{background-color:#D7CCC2;}
 
 
 /* ---------------------------------------BACKGROUND IMAGES------------- */
@@ -466,8 +470,8 @@ div.slider-item{padding:0;}
 .gallery-banner-title{background: #D7CCC2;}
 
 /* --------------------DONTAIONS */
-.donations h1{font-size:1.8rem;}
-.donations h2{font-size:1.8rem;}
+/* .donations h1{font-size:1.8rem;} */
+/* .donations h2{font-size:1.8rem;} */
 .donate{padding-right:8%;}
 
 /* --------------------CONTACT */
@@ -575,7 +579,6 @@ position:relative;}
     position:absolute;
 }
 
-
 /* ----------------------------------------MEDIA QUERIES------------- */
 /* --------------------DEFAULT RESPONSIVE STYLES */
 /* .hide{display:none;} */
@@ -616,6 +619,9 @@ position:relative;}
     /* -----------DONATIONS */
     .donations h1{font-size: 1.5rem;}
     .donations h2{font-size:1.5rem;}
+
+    .donator-links{padding-left:5%;
+padding-top:2.5%;}
 
 
     /* -----------CONTACT */
@@ -661,6 +667,7 @@ position:relative;}
     /* -----------TYPOGRAPHY */
 
     /* -----------PADDING + MARGIN */
+    .sm-padded{padding:5%;}
 
     /* -----------HEADER */
     .logo-img{margin: 0 2rem;
@@ -678,6 +685,21 @@ position:relative;}
 
     /* -----------DONTAIONS */
     .donorbox{padding:10% 0;}
+
+    .donator-links{padding-left:0;
+padding-top:2%;}
+
+.pad-s{padding-left:4.5%;
+    padding-bottom: 5%;;
+}
+
+.sm-grid-right{position:relative;
+right:0;}
+
+
+.sm-padded-nr{padding: 5% 0 5% 5%;}
+
+.pad-l{padding-left:5%;}
 
     /* -----------CONTACT */
     .contact-intro{padding:10% 5% 20%;}
