@@ -758,6 +758,7 @@ form textarea{min-height: 8rem;}
 
     /* -----------EMDEDDED MAP*/
     .map{padding:15% 10%;}
+    .hours{margin-left: 0;}
 
     .map-responsive{
         margin-right:0;
