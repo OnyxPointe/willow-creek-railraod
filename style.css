@@ -344,20 +344,37 @@ background-size: cover;}
 
 
 
-.bg-image-history-one{
+/* .bg-image-history-one{
     background-image:url('/images/steamup-2011.jpg');
 height:65vh;
+border: 3px solid #000000;} */
+
+.image-history{
+height:65vh;
+/* width:100%; */
 border: 3px solid #000000;}
 
-.bg-image-history-two{
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+/* .bg-image-history-two{
     background-image: url('/images/wcrr-little-roy.jpg');
 height:65vh;
-border: 3px solid #000000;}
+border: 3px solid #000000;} */
 
-.bg-image-history-three{
+/* .bg-image-history-three{
     background-image: url('/images/wcrr-train.jpg');
 height:65vh;
-border: 3px solid #000000;}
+border: 3px solid #000000;} */
 
 .history-title{padding: 5% 5% 0 0;
 border-bottom:2px solid #000000;}
