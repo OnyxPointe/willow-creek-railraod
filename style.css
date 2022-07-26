@@ -349,10 +349,7 @@ background-size: cover;}
 height:65vh;
 border: 3px solid #000000;} */
 
-.image-history{
-height:65vh;
-/* width:100%; */
-border: 3px solid #000000;}
+
 
 .fill {
     display: flex;
@@ -375,7 +372,10 @@ border: 3px solid #000000;} */
     background-image: url('/images/wcrr-train.jpg');
 height:65vh;
 border: 3px solid #000000;} */
-
+.image-history{
+height:65vh;
+/* width:100%; */
+border: 3px solid #000000;}
 .history-title{padding: 5% 5% 0 0;
 border-bottom:2px solid #000000;}
 
@@ -664,6 +664,8 @@ position:relative;}
     .md-hide{display: none;}
     .flip-md{flex-direction: column-reverse;}
 
+    .md-text{font-size: 1.5rem;}
+
     /* -----------PADDING + MARGIN */
     /* .contact-img{margin-bottom:40rem;} */
     /* contact */
@@ -679,6 +681,17 @@ position:relative;}
 
     /* -----------INDEX */
     .index-intro{padding:3.5% 5% 4.5%;}
+
+    /* -----------INDEX */
+    .image-history{height:50vh;}
+
+    .history-text-one{right:70px;}
+    .history-text-two{left:70px;}
+    .history-text-three{right:70px;}
+
+    .history-part-one{padding-top: 4rem;}
+    .history-part-two{padding-top:12rem;}
+    .history-part-three{padding:12rem 0 8rem;}
 
 
     /* -----------DONATIONS */
