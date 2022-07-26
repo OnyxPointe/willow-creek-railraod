@@ -166,7 +166,7 @@ hr{
     font-size:2.4rem;
     font-weight:700;
 }
-
+.line{padding: 0 .25%;}
 .ex-big-text{font-size:2.8rem;}
 
 .underlined{
@@ -292,28 +292,43 @@ padding-top:2.5%;}
 
 
 /* --------------------INDEX INTRO CAROUSEL */
-.bg-image-one{
-    background-image:url('/images/wcrr-train-rides.jpg');
-    background-position: 50% 30%;
+.fill-home {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden
+    height:70vh;
+}
+.fill-home img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.bg-image-home{height:70vh;}
+
+/* .bg-image-one{ */
+    /* background-image:url('/images/wcrr-steam.jpg'); */
+    /* background-position: 50% 20%; */
     /* background-size:contain; */
-    height:70vh;
+    /* height:70vh; */
 }
-.bg-image-two{
-    background-image:url('/images/wcrr-steam.jpg');
-    background-position: 50% 20%;
-    height:70vh;
-}
-
-.bg-image-three{
-    background-image:url('/images/wcrr-chip-colby.jpg');
-    background-position: top;
-    height:70vh;
+/* .bg-image-two{ */
+    /* background-image:url('/images/wcrr-train-rides.jpg'); */
+    /* background-position: 50% 25%; */
+    /* height:70vh; */
 }
 
-.bg-image-four{
-    background-image:url('/images/steam-engine-line-up.jpg');
-    background-position: top;
-    height:70vh;
+/* .bg-image-three{ */
+    /* background-image:url('/images/wcrr-chip-colby.jpg'); */
+    /* background-position: top; */
+    /* height:70vh; */
+}
+
+/* .bg-image-four{ */
+    /* background-image:url('/images/wcrr-ron-ashley.jpg'); */
+    /* background-position: top; */
+    /* height:70vh; */
 } 
 
 /* --------------------CONTACT */
@@ -365,6 +380,8 @@ border: 3px solid #000000;} */
     min-width: 100%;
     min-height: 100%
 }
+
+
 
 /* .bg-image-history-two{
     background-image: url('/images/wcrr-little-roy.jpg');
@@ -830,10 +847,10 @@ right:0;}
         border-radius: 0 25px 25px 0;
         box-shadow:7px 7px 20px 0px rgba(100, 100, 111, 0.2); 
         margin: 4% 0 8%;
-        padding:7% 8% 7% 5%;
+        padding:7% 8% 4% 5%;
         /* position:absolute;
         left: 0; */
-        height:60vh;
+        height:52vh;
         position:absolute;
         left:0;
         bottom:10px;
