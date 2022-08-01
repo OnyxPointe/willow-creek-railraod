@@ -9,34 +9,42 @@ gallery:
     aspect-ratio: square
     image-position: bg-pos-l
     background_image: /images/wcrr-chip-colby.jpg
+    alt-text: 
   - column-size: col-4_sm-12
     aspect-ratio: square
     image-position: bg-pos-l
     background_image: /images/finn-riding-train.jpg
+    alt-text: 
   - column-size: col-4_sm-12
     aspect-ratio: square
     image-position: bg-pos-r
     background_image: /images/wcrr-2019-steam-up.jpg
+    alt-text: 
   - column-size: col-12
     aspect-ratio: landscape
     image-position: bg-pos-center
     background_image: /images/wcrr-2019-steam-up-louie-station.jpg
+    alt-text: 
   - column-size: col-6_sm-12
     aspect-ratio: square
     image-position: bg-pos-l
     background_image: /images/wcrr-mark-adelblue.jpg
+    alt-text: 
   - column-size: col-6_sm-12
     aspect-ratio: square
     image-position: bg-pos-center
     background_image: /images/wcrr-alan-tammy.jpg
+    alt-text: 
   - column-size: col-4_sm-12
     aspect-ratio: square
     image-position: bg-pos-center
     background_image: /images/wcrr-james-folk.jpg
+    alt-text: 
   - column-size: col-4_sm-12
     aspect-ratio: square
     image-position: bg-pos-center
     background_image: /images/wcrr-steam-up.jpg
+    alt-text: 
   - column-size: col-4_sm-12
     aspect-ratio: square
     image-position: bg-pos-r
@@ -54,7 +62,7 @@ gallery:
   <div class="gallery grid" id="lightgallery">
       {% for item in page.gallery %}
       <a class="{{item.column-size}}" href="{{item.background_image}}">
-        <div class="bg-image-g {{item.aspect-ratio}} {{item.image-position}}" style="background-image: url('{{item.background_image}}');"></div>
+        <div role="img" alt="{{item.alt-text}}" class="bg-image-g {{item.aspect-ratio}} {{item.image-position}}" style="background-image: url('{{item.background_image}}');"></div>
       </a>
       {% endfor %}
   </div>
