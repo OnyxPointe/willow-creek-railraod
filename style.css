@@ -439,8 +439,7 @@ div.slider-item{padding:0;}
 
 /* --------------------GALLERY */
 .gallery-banner-title{background: #D7CCC2;
-/* position:absolute; */
-/* z-index: 1; */
+padding: 2% 2% 1.5%;
 }
 
 /* .bg-image-gallery{
