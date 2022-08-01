@@ -288,6 +288,13 @@ hr{
     background-size: cover;
 }
 
+/* --------------------GALLERY */
+.bg-image-gallery-banner{
+    background-image: url('/images/three-wcrr-trains.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
 
 /* --------------------MEMBERSHIP */
 .bg-membership{
@@ -433,16 +440,49 @@ div.slider-item{padding:0;}
 /* --------------------GALLERY */
 .gallery-banner-title{background: #D7CCC2;}
 
-                .bg-1 { background-image: url('https://source.unsplash.com/Sg3XwuEpybU'); }
-                .bg-2 { background-image: url('https://source.unsplash.com/yihlaRCCvd4'); }
-                .bg-3 { background-image: url('https://source.unsplash.com/G8cB8hY3yvU'); }
+.bg-image-gallery{
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    height:500px;
+    width:100%;
+}
+
+
 
 
                 /* Filterable Gallery Styles   */
-                .gallery .bg-image {padding-bottom: 100%;}
-                .gallery {padding: 1rem;}
-                .gallery [class*=col] {padding: 0.1rem;}
-                .hidden {display: none;}
+                /* .pop-up-gallery .bg-image-gallery {padding-bottom: 10%;} */
+                /* .gallery [class*=col] {padding: 0.4rem;}
+                .hidden {display: none;} */
+
+                
+/* Responsive Image Utility Classes  */
+
+.bg-image-g {
+	background-color: rgb(240,240,240);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.portrait-tall{padding-bottom:175%;}
+.portrait{padding-bottom:125%;}
+.square{padding-bottom:100%;}
+.landscape{padding-bottom:66%;}
+.landscape-wide{padding-bottom:56%;}
+
+.bg-pos-t{background-position:top;}
+.bg-pos-b{background-position: bottom;}
+.bg-pos-l{background-position: left;}
+.bg-pos-r{background-position: right;}
+
+.gallery [class*="col-"]{padding:0.5%;}
+
+/* .bg-1 { background-image: url('https://source.unsplash.com/Sg3XwuEpybU'); }
+.bg-2 { background-image: url('https://source.unsplash.com/yihlaRCCvd4'); }
+.bg-3 { background-image: url('https://source.unsplash.com/G8cB8hY3yvU'); } */
+
 
 /* --------------------DONTAIONS */
 .donate{padding-right:8%;}
@@ -733,10 +773,10 @@ form textarea{min-height: 8rem;}
     .become-member{
         border-radius: 0 25px 25px 0;
         box-shadow:7px 7px 20px 0px rgba(100, 100, 111, 0.2); 
-        height:52vh;
+        height:auto;
         left:0;
-        margin: 4% 0 8%;
-        padding:7% 8% 4% 5%;
+        margin: 7rem 0 8%;
+        padding:7% 8% 7% 5%;
         position:absolute;
         bottom:10px;
     }
@@ -745,7 +785,7 @@ form textarea{min-height: 8rem;}
         border-radius: 25px 0 0 25px;
         box-shadow:-7px 7px 20px 0px rgba(100, 100, 111, 0.2);
         height: auto;
-        margin: 8% 0 4%;
+        margin: 8% 0 7rem;
         padding: 6.5% 5% 5%;
         position:absolute;
         text-align:right;

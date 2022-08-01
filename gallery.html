@@ -1,35 +1,41 @@
 ---
 layout: default
 title: Gallery page
-seo-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consequatur. Perspiciatis nisi provident asperiores aliquid iste voluptatum culpa laboriosam commodi corrupti. Aut nulla nostrum, veritatis odit dolores totam debitis. Tempore.
+seo-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consequatur. Perspiciatis nisi provident asperiores aliquid iste voluptatum culpa laboriosam commodi corrupti. Aut nulla nostrum, veritatis odit dolores totam debitis.
+gallery:
+  - column-size: col-4
+    aspect-ration: square
+    background_image: /images/wcrr-chip-colby.jpg
+  - column-size: col-4
+    aspect-ration: square
+    background_image: /images/wcrr-chip-colby.jpg
+  - column-size: col-4
+    aspect-ration: square
+    background_image: /images/wcrr-chip-colby.jpg
+  - column-size: col-12
+    aspect-ration: landscape
+    background_image: /images/wcrr-chip-colby.jpg
+  - column-size: col-6
+    aspect-ration: square
+    background_image: /images/wcrr-chip-colby.jpg
+  - column-size: col-6
+    aspect-ration: square
+    background_image: /images/wcrr-chip-colby.jpg
+  
 ---
 
 <section class="gallery-banner grid-middle">
-    <div class="bg-image-gallery-banner bg-image-rr-sign tall-70 col-12 grid-center-middle">
+    <div class="bg-image-gallery-banner tall-70 col-12 grid-center-middle">
         <h1 class="gallery-banner-title col-4 padded-xs centered">Explore our museum</h1>
     </div>
 </section>
 
-<section class="pop-up-gallery tall-70 bg-dark-tan">
-    <div class="grid-center gallery" id="lightgallery">
-      <a class="col-4_sm-6_xs-12" href="https://source.unsplash.com/Sg3XwuEpybU">
-        <div class="bg-image bg-1"></div>
-      </a>
-      <a class="col-4_sm-6_xs-12" href="https://source.unsplash.com/yihlaRCCvd4">
-        <div class="bg-image bg-2"></div>
-      </a>
-      <a class="col-4_sm-6_xs-12" href="https://source.unsplash.com/G8cB8hY3yvU">
-        <div class="bg-image bg-3"></div>
-      </a>
-      <a class="col-4_sm-6_xs-12" href="https://source.unsplash.com/yihlaRCCvd4">
-        <div class="bg-image bg-2"></div>
-      </a>
-      <a class="col-4_sm-6_xs-12" href="https://source.unsplash.com/G8cB8hY3yvU">
-        <div class="bg-image bg-3"></div>
-      </a>
-      <a class="col-4_sm-6_xs-12" href="https://source.unsplash.com/Sg3XwuEpybU">
-        <div class="bg-image bg-1"></div>
-      </a>
-    </div> 
+<section class="padded">
+  <div class="gallery grid">
+      {% for item in page.gallery %}
+      <div class="{{item.column-size}}">
+        <div class="bg-image-g {{item.aspect-ration}}" style="background-image: url('{{item.background_image}}');"></div>
+      </div>
+      {% endfor %}
+  </div>
 </section>
-
