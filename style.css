@@ -154,6 +154,9 @@ hr{
 
 .border{border: 3px solid #000000;}
 
+.underlined-no-m{ border-bottom: 2px solid #000000;
+    margin-bottom: 0;}
+
 .underlined{
     border-bottom: 2px solid #000000;
     margin-bottom: 1rem;
@@ -440,6 +443,7 @@ div.slider-item{padding:0;}
 /* --------------------GALLERY */
 .gallery-banner-title{background: #D7CCC2;
 padding: 2% 2% 1.5%;
+text-align:center;
 }
 
 /* .bg-image-gallery{

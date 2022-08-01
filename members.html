@@ -1,22 +1,39 @@
 ---
 layout: private
 title: Members Page
+banner_image: /images/aerial-view-wcrr.jpg
+calendar-embed-code:
 ---
 
 <!-- --------------------HEADER ------------------- -->
-<section class="member-heading">
-    <div class="bg-image bg-image-one">
-        <div class="col-5-center bg-tan">
-            <h1>WCRRR Members</h1>
-            <a href="#">Back to main website</a>
-        </div>
+<section class="bg-image tall-70 grid-center-middle" style="background-image: url('{{page.banner_image}}');">
+    <div class="bg-tan centered padded-sm">
+        <h1 class="col-8 editable big-text">WCRR Members</h1>
+        <a class="underlined-no-m" href="#">Back to main website</a>
     </div>
 </section>
 
-<section class="announcments">
-
+<section class="announcments grid padded">
+    <div class="col-6_sm-12 padded-sm">
+        <h2 class="md-text editable">Announcments:</h2>
+        <ul>
+            <li>Place holder text</li>
+            <li>Place holder text</li>
+        </ul>
+    </div>
+    <div class="col-6_sm-12 padded-sm">
+        <h2 class="md-text editable">Items Needed:</h2>
+        <ul>
+            <li>Place holder text</li>
+            <li>Place holder text</li>
+        </ul>
+    </div>
 </section>
 
-<section class="calendar bg-grey">
+<section class="calendar bg-grey tall-70 padded">
+    <h3 class="md-text">All upcoming events</h3>
+    <div class="calendar">
+        {{page.calendar-embed-code}}
+    </div>
     
 </section>
