@@ -3,24 +3,42 @@ layout: default
 title: Gallery page
 seo-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consequatur. Perspiciatis nisi provident asperiores aliquid iste voluptatum culpa laboriosam commodi corrupti. Aut nulla nostrum, veritatis odit dolores totam debitis.
 gallery:
-  - column-size: col-4
+  - column-size: col-4_sm-12
     aspect-ration: square
+    image-position: bg-pos-l
     background_image: /images/wcrr-chip-colby.jpg
-  - column-size: col-4
+  - column-size: col-4_sm-12
     aspect-ration: square
-    background_image: /images/wcrr-chip-colby.jpg
-  - column-size: col-4
+    image-position: bg-pos-l
+    background_image: /images/finn-riding-train.jpg
+  - column-size: col-4_sm-12
     aspect-ration: square
-    background_image: /images/wcrr-chip-colby.jpg
+    image-position: bg-pos-r
+    background_image: /images/wcrr-2019-steam-up.jpg
   - column-size: col-12
     aspect-ration: landscape
-    background_image: /images/wcrr-chip-colby.jpg
-  - column-size: col-6
+    image-position: bg-pos-center
+    background_image: /images/wcrr-2019-steam-up-louie-station.jpg
+  - column-size: col-6_sm-12
     aspect-ration: square
-    background_image: /images/wcrr-chip-colby.jpg
-  - column-size: col-6
+    image-position: bg-pos-l
+    background_image: /images/wcrr-mark-adelblue.jpg
+  - column-size: col-6_sm-12
     aspect-ration: square
-    background_image: /images/wcrr-chip-colby.jpg
+    image-position: bg-pos-center
+    background_image: /images/wcrr-alan-tammy.jpg
+  - column-size: col-4_sm-12
+    aspect-ration: square
+    image-position: bg-pos-center
+    background_image: /images/wcrr-james-folk.jpg
+  - column-size: col-4_sm-12
+    aspect-ration: square
+    image-position: bg-pos-center
+    background_image: /images/wcrr-steam-up.jpg
+  - column-size: col-4_sm-12
+    aspect-ration: square
+    image-position: bg-pos-r
+    background_image: /images/wcrr-frank-lertora.jpg
   
 ---
 
@@ -34,7 +52,7 @@ gallery:
   <div class="gallery grid" id="lightgallery">
       {% for item in page.gallery %}
       <a class="{{item.column-size}}" href="{{item.background_image}}">
-        <div class="bg-image-g {{item.aspect-ration}}" style="background-image: url('{{item.background_image}}');"></div>
+        <div class="bg-image-g {{item.aspect-ration}} {{item.image-position}}" style="background-image: url('{{item.background_image}}');"></div>
       </a>
       {% endfor %}
   </div>

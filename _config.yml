@@ -14,3 +14,10 @@ _select_data:
     col-6_sm-12: One Half Desktop / Stacked Mobile
     col-4_sm-12: One Third Desktop / Stacked Mobile
     col-3_sm-12: One Quarter Desktop / Stacked Mobile
+
+  image-positions:
+    bg-pos-t: Top
+    bg-pos-b: Bottom
+    bg-pos-l: Left
+    bg-pos-r: Right
+    bg-pos-center: Center

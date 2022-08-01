@@ -462,7 +462,7 @@ div.slider-item{padding:0;}
 .bg-image-g {
 	background-color: rgb(240,240,240);
   background-size: cover; 
-  background-position: center; 
+  /* background-position: center;  */
   background-repeat: no-repeat;
 }
 
@@ -476,6 +476,7 @@ div.slider-item{padding:0;}
 .bg-pos-b{background-position: bottom;}
 .bg-pos-l{background-position: left;}
 .bg-pos-r{background-position: right;}
+.bg-pos-center{background-position: center;}
 
 .gallery [class*="col-"]{padding:0.5%;}
 
