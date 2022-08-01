@@ -31,11 +31,20 @@ gallery:
 </section>
 
 <section class="padded">
-  <div class="gallery grid">
+  <div class="gallery grid" id="lightgallery">
+      {% for item in page.gallery %}
+      <a class="{{item.column-size}}" href="{{item.background_image}}">
+        <div class="bg-image-g {{item.aspect-ration}}" style="background-image: url('{{item.background_image}}');"></div>
+      </a>
+      {% endfor %}
+  </div>
+
+  <!-- STANDARD GALLERY - No Pop-Up -->
+  <!-- <div class="gallery grid">
       {% for item in page.gallery %}
       <div class="{{item.column-size}}">
         <div class="bg-image-g {{item.aspect-ration}}" style="background-image: url('{{item.background_image}}');"></div>
       </div>
       {% endfor %}
-  </div>
+  </div> -->
 </section>
