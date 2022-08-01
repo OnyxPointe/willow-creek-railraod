@@ -1,50 +1,52 @@
 ---
 layout: default
-title: Gallery page
-seo-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, consequatur. Perspiciatis nisi provident asperiores aliquid iste voluptatum culpa laboriosam commodi corrupti. Aut nulla nostrum, veritatis odit dolores totam debitis.
+title: Gallery Page
+seo-description: 
+banner_image: /images/three-wcrr-trains.jpg
+banner-image-alt-text: 
 gallery:
   - column-size: col-4_sm-12
-    aspect-ration: square
+    aspect-ratio: square
     image-position: bg-pos-l
     background_image: /images/wcrr-chip-colby.jpg
   - column-size: col-4_sm-12
-    aspect-ration: square
+    aspect-ratio: square
     image-position: bg-pos-l
     background_image: /images/finn-riding-train.jpg
   - column-size: col-4_sm-12
-    aspect-ration: square
+    aspect-ratio: square
     image-position: bg-pos-r
     background_image: /images/wcrr-2019-steam-up.jpg
   - column-size: col-12
-    aspect-ration: landscape
+    aspect-ratio: landscape
     image-position: bg-pos-center
     background_image: /images/wcrr-2019-steam-up-louie-station.jpg
   - column-size: col-6_sm-12
-    aspect-ration: square
+    aspect-ratio: square
     image-position: bg-pos-l
     background_image: /images/wcrr-mark-adelblue.jpg
   - column-size: col-6_sm-12
-    aspect-ration: square
+    aspect-ratio: square
     image-position: bg-pos-center
     background_image: /images/wcrr-alan-tammy.jpg
   - column-size: col-4_sm-12
-    aspect-ration: square
+    aspect-ratio: square
     image-position: bg-pos-center
     background_image: /images/wcrr-james-folk.jpg
   - column-size: col-4_sm-12
-    aspect-ration: square
+    aspect-ratio: square
     image-position: bg-pos-center
     background_image: /images/wcrr-steam-up.jpg
   - column-size: col-4_sm-12
-    aspect-ration: square
+    aspect-ratio: square
     image-position: bg-pos-r
     background_image: /images/wcrr-frank-lertora.jpg
   
 ---
 
 <section class="gallery-banner grid-middle">
-    <div class="bg-image-gallery-banner tall-70 col-12 grid-center-middle">
-        <h1 class="gallery-banner-title col-4 padded-xs centered">Explore our museum</h1>
+    <div role="img" alt="{{page.banner-image-alt-text}}" class="bg-image-gallery-banner tall-70 col-12 grid-center-middle" style="background-image: url('{{page.banner_image}}');">
+        <h1 class="gallery-banner-title col-4 padded-xs centered editable">Explore our museum</h1>
     </div>
 </section>
 
@@ -52,7 +54,7 @@ gallery:
   <div class="gallery grid" id="lightgallery">
       {% for item in page.gallery %}
       <a class="{{item.column-size}}" href="{{item.background_image}}">
-        <div class="bg-image-g {{item.aspect-ration}} {{item.image-position}}" style="background-image: url('{{item.background_image}}');"></div>
+        <div class="bg-image-g {{item.aspect-ratio}} {{item.image-position}}" style="background-image: url('{{item.background_image}}');"></div>
       </a>
       {% endfor %}
   </div>
