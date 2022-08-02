@@ -2,14 +2,14 @@
 layout: private
 title: Members Page
 banner_image: /images/aerial-view-wcrr.jpg
-calendar-embed-code:
+calendar-embed-code: https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FAmsterdam&title=Test&mode=WEEK&showTitle=0&showNav=1&showDate=1&showPrint=1&showTabs=1&showCalendars=0&showTz=0&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4uZHV0Y2gjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4udWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%2333B679&color=%230B8043&color=%230B8043
 ---
 
 <!-- --------------------HEADER ------------------- -->
 <section class="bg-image tall-70 grid-center-middle" style="background-image: url('{{page.banner_image}}');">
     <div class="bg-tan centered padded-sm">
         <h1 class="col-8 editable big-text">WCRR Members</h1>
-        <a class="underlined-no-m" href="#">Back to main website</a>
+        <a class="underlined-no-m" href="#"><span>&#8592;</span> Back to main website</a>
     </div>
 </section>
 
@@ -23,17 +23,18 @@ calendar-embed-code:
     </div>
     <div class="col-6_sm-12 padded-sm">
         <h2 class="md-text editable">Items Needed:</h2>
-        <ul>
+        <ul class="editable">
             <li>Place holder text</li>
             <li>Place holder text</li>
         </ul>
     </div>
 </section>
 
-<section class="calendar bg-grey tall-70 padded">
+<section class="calendar bg-grey padded centered">
     <h3 class="md-text">All upcoming events</h3>
     <div class="calendar">
-        {{page.calendar-embed-code}}
+        <iframe src="{{page.calendar-embed-code}}" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        
     </div>
     
 </section>

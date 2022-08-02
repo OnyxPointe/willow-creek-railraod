@@ -154,7 +154,8 @@ hr{
 
 .border{border: 3px solid #000000;}
 
-.underlined-no-m{ border-bottom: 2px solid #000000;
+.underlined-no-m{ 
+    /* border-bottom: 2px solid #000000; */
     margin-bottom: 0;}
 
 .underlined{
@@ -589,6 +590,11 @@ form textarea{min-height: 8rem;}
 
 .meber-login h1{margin-bottom:.5rem;}
 .member-login h2{margin-bottom: .2rem;}
+
+/* --------------------MEMBER PRIVATE */
+.announcments ul{
+    list-style-type:circle;} 
+
 
 /* --------------------EMBEDDED MAP */
 .map{padding:5%}
