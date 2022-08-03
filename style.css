@@ -263,6 +263,13 @@ hr{
     background-size: cover;
 }
 
+.bg-image-index{
+    background-position: top;
+    background-repeat: none;
+    align-items:start;
+    background-size: cover;
+}
+
 .fill {
     display: flex;
     justify-content: center;
@@ -484,6 +491,13 @@ text-align:center;
 .bg-pos-l{background-position: left;}
 .bg-pos-r{background-position: right;}
 .bg-pos-center{background-position: center;}
+
+.bg-pos-tc{background-position: center top;}
+.bg-pos-tl{background-position: top left;}
+.bg-pos-tr{background-position: top right;}
+.bg-pos-bc{background-position: center bottom;}
+.bg-pos-bl{background-position: bottom left;}
+.bg-pos-br{background-position: bottom right;}
 
 .gallery [class*="col-"]{padding:0.5%;}
 

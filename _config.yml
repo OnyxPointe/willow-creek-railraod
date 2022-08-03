@@ -21,3 +21,9 @@ _select_data:
     bg-pos-l: Left
     bg-pos-r: Right
     bg-pos-center: Center
+    bg-pos-tc: Top Center
+    bg-pos-tl: Top Left 
+    bg-pos-tr: Top Right
+    bg-pos-bc: Bottom Center
+    bg-pos-bl: Bottom Left
+    bg-pos-br: Bottom Right
