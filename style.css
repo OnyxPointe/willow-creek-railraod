@@ -753,6 +753,7 @@ form textarea{min-height: 8rem;}
 
     /* -----------PADDING + MARGIN */
     .sm-padded{padding:5%;}
+    .sm-padded-l{padding:10% 7.5%;}
         .smm-padded{padding:10% 15% 10% 8%;}
         .smml-padded{padding:10% 0 10% 12%;}
 
