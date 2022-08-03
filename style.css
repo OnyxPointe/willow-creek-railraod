@@ -698,11 +698,13 @@ form textarea{min-height: 8rem;}
     .mobile-hide{display: none;}
     .mobile-show{display:block;}
     .flip-sm{flex-direction: column-reverse;}
+    /* br{margin-bottom:.5rem;} */
     
     /* -----------TYPOGRAPHY */
-    html{ font-size:14px; }    
+    /* html{ font-size:14px; }     */
     .sm-left{text-align: left;}
     .sm-right{text-align: right;}
+    .sm-center{text-align: center;}
 
     /* -----------PADDING + MARGIN */
     .sm-padded{padding:5%;}
@@ -719,8 +721,22 @@ form textarea{min-height: 8rem;}
     }
 
     /* -----------INDEX */
-    .image-home{height:45vh;}
+    /* .image-home{height:45vh;} */
     .bullet-points div{padding:7% 3%;}
+
+    .fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+    .fill img {
+        flex-shrink: none;
+        min-width: 100%;
+        min-height: 100%
+            /* overflow:hidden; */
+    }
 
     /* -----------HISTORY */
                     /* TODO */
@@ -819,12 +835,19 @@ form textarea{min-height: 8rem;}
         margin-bottom:0;
         padding-bottom:45.25%;
     }
+
+    footer p{line-height:2;}
+    .contact-intro a{line-height:2;}
 }
 
 /* --------------------XS Media Query (36em / 576px) */
 @media (max-width: 36em) {
     .xs-hide{display: none;}
     .xs-show {display: block;}
+
+    .gallery-banner-title{
+padding: 3.5% 2% 1.5%;
+}
 }
 
 /* --------------------XXS Media Query (25em / 400px) */
