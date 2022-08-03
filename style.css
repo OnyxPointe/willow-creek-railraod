@@ -611,6 +611,8 @@ form textarea{min-height: 8rem;}
 
 /* .member-banner{height:5rem;} */
 
+
+
 /* --------------------EMBEDDED MAP */
 .map{padding:5%}
 .hours{padding:5%;}
@@ -706,6 +708,23 @@ form textarea{min-height: 8rem;}
     .member-login{padding: 16% 2%;
 }
     .member-login h2{font-size:1.5rem;}
+
+    .calendar-responsive{
+    height:0;
+    overflow:hidden;
+    padding-bottom:75.25%;
+    position:relative;
+    
+}
+
+.calendar-responsive iframe{
+    height:100%;
+    left:0;
+    position:absolute; 
+    top:0;
+    width:100%;
+    
+}
 
     /* -----------EMBEDDED MAP  */
     .map{padding:10% 7%;}
