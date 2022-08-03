@@ -725,8 +725,11 @@ form textarea{min-height: 8rem;}
 
     /* -----------PADDING + MARGIN */
     .sm-padded{padding:5%;}
+        .smm-padded{padding:15% 15% 15% 8%;}
+        .smml-padded{padding:15% 0 15% 12%;}
+
     .sm-padded-lg{padding:10% 7.5%}
-    .sm-tall-55{height:55vh;}
+    .sm-tall-50{height:50vh;}
     
     /* -----------BACKGROUNDS */
     .bg-membership{background-position: 95% 36%;}
@@ -785,7 +788,7 @@ form textarea{min-height: 8rem;}
                         position:relative;
                         right:0;
                     }
-                    .sm-padded-nr{padding: 5% 0 5% 5%;}
+                    /* .sm-padded-nr{padding: 5% 0 5% 5%;} */
                     .pad-l{padding-left:5%;}
 
 
