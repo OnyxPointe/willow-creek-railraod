@@ -2,6 +2,14 @@
 layout: private
 title: Members Page
 banner_image: /images/aerial-view-wcrr.jpg
+announcments:
+  - announcment: 
+  - announcment: 
+  - announcment: 
+needed:
+  - item-needed: 
+  - item-needed: 
+  - item-needed: 
 calendar-embed-code: https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FAmsterdam&title=Test&mode=WEEK&showTitle=0&showNav=1&showDate=1&showPrint=1&showTabs=1&showCalendars=0&showTz=0&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4uZHV0Y2gjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&src=ZW4udWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%2333B679&color=%230B8043&color=%230B8043
 ---
 
@@ -17,25 +25,17 @@ calendar-embed-code: https://calendar.google.com/calendar/embed?height=600&wkst=
     <div class="col-6_sm-12 padded-sm">
         <h2 class="md-text editable">Announcments:</h2>
         <ul>
-            <li class="editable">Place holder</li>
-            <li class="editable"></li>
-            <li class="editable"></li>
-            <li class="editable"></li>
-            <li class="editable"></li>
-            <li class="editable"></li>
-            <li class="editable"></li>
+            {% for item in page.announcments %}
+            <li class="editable">{{item.announcment}}</li>
+            {% endfor %}
         </ul>
     </div>
     <div class="col-6_sm-12 padded-sm">
         <h2 class="md-text editable">Items Needed:</h2>
         <ul>
-            <li class="editable">Place holder</li>
-            <li class="editable"></li>
-            <li class="editable"></li>
-            <li class="editable"></li>
-            <li class="editable"></li>
-            <li class="editable"></li>
-            <li class="editable"></li>
+            {% for item in page.needed %}
+            <li class="editable">{{item.item-needed}}</li>
+            {% endfor %}
         </ul>
     </div>
 </section>
