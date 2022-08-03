@@ -14,13 +14,21 @@ calendar-embed-code: https://calendar.google.com/calendar/embed?height=600&wkst=
 ---
 
 <!-- --------------------HEADER ------------------- -->
-<section class="bg-image tall-70 grid-center-middle" style="background-image: url('{{page.banner_image}}');">
-    <div class="bg-tan centered padded-sm">
+<section class="bg-image tall-60 grid-center-middle" style="background-image: url('{{page.banner_image}}');">
+    <div class="bg-tan centered padded-sm sm-padded">
         <h1 class="editable big-text">WCRR Members</h1>
         <a class="underlined-no-m" href="#"><span>&#8592;</span> Back to main website</a>
     </div>
 </section>
 
+<!-- --------------------NEWSLETTER BANNER ------------------- -->
+<section class="member-banner centered grid-middle-center bg-dark-tan padded-xs sm-padded">
+   <div class="col-6">
+        <a href="#" class="btn-green uppercase editable"> Read the Newsletter</a>
+   </div>
+</section>
+
+<!-- --------------------ANNOUNCMENTS + ITEMS NEEDED ------------------- -->
 <section class="announcments grid padded">
     <div class="col-6_sm-12 padded-sm">
         <h2 class="md-text editable">Announcments:</h2>
@@ -40,11 +48,10 @@ calendar-embed-code: https://calendar.google.com/calendar/embed?height=600&wkst=
     </div>
 </section>
 
+<!-- --------------------EMBEDDED CALENDAR ------------------- -->
 <section class="calendar bg-grey padded centered">
     <h3 class="md-text editable">All upcoming events</h3>
     <div class="calendar">
         <iframe src="{{page.calendar-embed-code}}" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-        
     </div>
-    
 </section>

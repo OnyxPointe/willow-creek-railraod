@@ -609,6 +609,7 @@ form textarea{min-height: 8rem;}
 .announcments ul{
     list-style-type:circle;} 
 
+/* .member-banner{height:5rem;} */
 
 /* --------------------EMBEDDED MAP */
 .map{padding:5%}
@@ -842,6 +843,9 @@ form textarea{min-height: 8rem;}
     }
 
     .member-login h2{font-size:1.6rem;}
+
+    .member-banner .btn-green{padding:4.5% 6.5%;
+    font-size:.9rem;}
 
     /* -----------EMDEDDED MAP*/
     .map{padding:15% 10%;}
