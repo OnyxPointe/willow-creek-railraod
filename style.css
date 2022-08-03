@@ -578,7 +578,7 @@ form textarea{min-height: 8rem;}
 
 /* --------------------MEMBERSHIP */
 .login-section{
-    height:75vh;
+    /* height:90vh; */
     position:relative;
 }
 
@@ -587,19 +587,19 @@ form textarea{min-height: 8rem;}
     border-radius: 25px 0 0 25px;
     box-shadow:0px 7px 29px 0px rgba(100, 100, 111, 0.2); 
     color:#FFFFFF;
-    margin: 4% 0;
-    padding:3.5% 8% 4% 3%;
-    height:60vh;
+    margin: 5rem 0;
+    padding:4% 8% 4% 3%;
+    height:65vh;
 }
 
 .member-login{
     background-color: #D7CCC2;
     border-radius: 0 25px 25px 0;
     box-shadow:7px 7px 29px 0px rgba(100, 100, 111, 0.2);
-    margin: 4% 0;
-    height:60vh;
+    margin: 5rem 0;
     padding: 10% 2%;
     text-align: center;
+    height:65vh;
 }
 
 .meber-login h1{margin-bottom:.5rem;}
@@ -698,9 +698,12 @@ form textarea{min-height: 8rem;}
     }
 
     /* -----------MEMBERSHIP */
-    .become-member{padding:5.5% 6% 4% 3.5%;}
+    .login-section{height: 120vh;}
+    .become-member{padding:5.5% 6% 4% 3.5%;
+}
 
-    .member-login{padding: 16% 2%;}
+    .member-login{padding: 16% 2%;
+}
     .member-login h2{font-size:1.5rem;}
 
     /* -----------EMBEDDED MAP  */
@@ -709,6 +712,11 @@ form textarea{min-height: 8rem;}
     .map-responsive{padding-bottom:35.25%;}
 }
 
+
+@media(max-width:760px){
+        .login-section{height: 110vh;}
+
+}
 /* --------------------SM Media Query (48em / 768px) */
 @media(max-width:48em){
     /* -----------GENERAL CLASSES */
@@ -725,8 +733,8 @@ form textarea{min-height: 8rem;}
 
     /* -----------PADDING + MARGIN */
     .sm-padded{padding:5%;}
-        .smm-padded{padding:15% 15% 15% 8%;}
-        .smml-padded{padding:15% 0 15% 12%;}
+        .smm-padded{padding:10% 15% 10% 8%;}
+        .smml-padded{padding:10% 0 10% 12%;}
 
     .sm-padded-lg{padding:10% 7.5%}
     .sm-tall-50{height:50vh;}
@@ -742,7 +750,7 @@ form textarea{min-height: 8rem;}
     }
 
     /* -----------INDEX */
-    /* .image-home{height:45vh;} */
+    .image-home{height:45vh;}
     .bullet-points div{padding:7% 3%;}
 
     /* -----------HISTORY */
@@ -807,14 +815,14 @@ form textarea{min-height: 8rem;}
     .contact-form{padding:10% 5%;}
 
     /* -----------MEMBERSHIP */
-    .login-section{height: 105vh;}
+    .login-section{height: 120vh;}
 
     .become-member{
         border-radius: 0 25px 25px 0;
         box-shadow:7px 7px 20px 0px rgba(100, 100, 111, 0.2); 
         height:auto;
         left:0;
-        margin: 7rem 0 8%;
+        margin: 10rem 0 8%;
         padding:7% 8% 7% 5%;
         position:absolute;
         bottom:10px;
@@ -824,7 +832,7 @@ form textarea{min-height: 8rem;}
         border-radius: 25px 0 0 25px;
         box-shadow:-7px 7px 20px 0px rgba(100, 100, 111, 0.2);
         height: auto;
-        margin: 8% 0 7rem;
+        margin: 8% 0 10rem;
         padding: 6.5% 5% 5%;
         position:absolute;
         text-align:right;
@@ -858,7 +866,13 @@ form textarea{min-height: 8rem;}
     .gallery-banner-title{
 padding: 3.5% 2% 1.5%;
 }
+
+    .login-section{height: 105vh;}
+
 }
 
 /* --------------------XXS Media Query (25em / 400px) */
-/* @media (max-width: 25em) {} */ 
+@media (max-width: 25em) {
+        /* .login-section{height: 125vh;} */
+
+} 
