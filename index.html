@@ -5,12 +5,16 @@ seo-description:
 gallery:
   - _image: /images/wcrr-steam.jpg
     image-alt-text:  
+    image-position: bg-pos-center
   - _image: /images/wcrr-train-rides.jpg
     image-alt-text:
+    image-position: bg-pos-r
   - _image: /images/wcrr-chip-colby.jpg
     image-alt-text: 
+    image-position: bg-pos-l
   - _image: /images/wcrr-ron-ashley.jpg
     image-alt-text: 
+    image-position: bg-pos-r
 video: <iframe src="https://player.vimeo.com/video/601565882?h=d66cdbe14e&title=0&byline=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 ---
 
@@ -19,8 +23,15 @@ video: <iframe src="https://player.vimeo.com/video/601565882?h=d66cdbe14e&title=
     <div class="slider-container">
         {% for item in page.gallery %}
         <div class="slider-item">
-            <div class="fill image-home"><img src="{{item._image}}" alt="{{item.image-alt-text}}"/></div>
+            <!-- <div role="img" alt="{{item.image-alt-text}}" class="image-home" style="background-image: url('{{item_image}}');"></div> -->
+
+            <div role="img" alt="{{item.image-alt-text}}" class="bg-image tall-70 sm-tall-55 {{item.image-position}}" style="background-image: url('{{item._image}}');">
+    </div>
         </div>
+
+        <!-- <div class="slider-item">
+            <div class="fill image-home"><img src="{{item._image}}" alt="{{item.image-alt-text}}"/></div>
+        </div> -->
         {% endfor %}
     </div>
 </section>

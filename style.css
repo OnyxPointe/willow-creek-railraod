@@ -267,7 +267,7 @@ hr{
     display: flex;
     justify-content: center;
     align-items: start;
-    overflow: hidden
+    overflow-x: hidden
 }
 
 .fill img {
@@ -627,6 +627,9 @@ form textarea{min-height: 8rem;}
 }
 
 @media(max-width:75em){
+    .image-contact{
+        height: 40vh;
+    }
 }
 
 /* --------------------MD MEDIA QUERY (64em / 1024px) */
@@ -676,7 +679,7 @@ form textarea{min-height: 8rem;}
     .contact-intro{padding:7% 5%;}
 
     .image-contact{
-        height: 45vh;
+        height: 50vh;
         margin-bottom:3.25rem;
     }
 
@@ -709,6 +712,7 @@ form textarea{min-height: 8rem;}
     /* -----------PADDING + MARGIN */
     .sm-padded{padding:5%;}
     .sm-padded-lg{padding:10% 7.5%}
+    .sm-tall-55{height:55vh;}
     
     /* -----------BACKGROUNDS */
     .bg-membership{background-position: 95% 36%;}
@@ -723,20 +727,6 @@ form textarea{min-height: 8rem;}
     /* -----------INDEX */
     /* .image-home{height:45vh;} */
     .bullet-points div{padding:7% 3%;}
-
-    .fill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-    .fill img {
-        flex-shrink: none;
-        min-width: 100%;
-        min-height: 100%
-            /* overflow:hidden; */
-    }
 
     /* -----------HISTORY */
                     /* TODO */
