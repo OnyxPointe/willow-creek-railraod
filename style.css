@@ -788,10 +788,13 @@ form textarea{min-height: 8rem;}
 
     /* -----------CONTACT */
     .contact-intro{padding:10% 5% 20%;}
+    .big-text{font-size:2.2rem;}
+    .ex-big-text{font-size:2.2rem;
+    margin-top:1rem;}
 
     .image-contact{
-        height: 35vh;
-        width:80vw;    
+        height: auto;
+        width:90vw;    
     }
     
     .contact-form{padding:10% 5%;}
