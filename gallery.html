@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Gallery Page
+title: WCRR - Gallery
 seo-description: 
 banner_image: /images/three-wcrr-trains.jpg
 banner-image-alt-text: 
@@ -52,27 +52,20 @@ gallery:
   
 ---
 
+<!-- --------------------GALLERY HEADING------------------- -->
 <section class="gallery-banner grid-middle">
-    <div role="img" alt="{{page.banner-image-alt-text}}" class="bg-image-gallery-banner tall-70 sm-tall-50 col-12 grid-center-middle" style="background-image: url('{{page.banner_image}}');">
+    <div role="img" alt="{{page.banner-image-alt-text}}" class="bg-image tall-70 sm-tall-50 col-12 grid-center-middle" style="background-image: url('{{page.banner_image}}');">
         <h1 class="gallery-banner-title col-4_sm-10 editable">Explore our museum</h1>
     </div>
 </section>
 
+<!-- --------------------POP-UP GALLERY------------------- -->
 <section class="padded">
-  <div class="gallery grid" id="lightgallery">
-      {% for item in page.gallery %}
-      <a class="{{item.column-size}}" href="{{item.background_image}}">
-        <div role="img" alt="{{item.alt-text}}" class="bg-image-g {{item.aspect-ratio}} {{item.image-position}}" style="background-image: url('{{item.background_image}}');"></div>
-      </a>
-      {% endfor %}
-  </div>
-
-  <!-- STANDARD GALLERY - No Pop-Up -->
-  <!-- <div class="gallery grid">
-      {% for item in page.gallery %}
-      <div class="{{item.column-size}}">
-        <div class="bg-image-g {{item.aspect-ration}}" style="background-image: url('{{item.background_image}}');"></div>
-      </div>
-      {% endfor %}
-  </div> -->
+    <div class="gallery grid" id="lightgallery">
+        {% for item in page.gallery %}
+        <a class="{{item.column-size}}" href="{{item.background_image}}">
+          <div role="img" alt="{{item.alt-text}}" class="bg-image {{item.aspect-ratio}} {{item.image-position}}" style="background-image: url('{{item.background_image}}');"></div>
+        </a>
+        {% endfor %}
+    </div>
 </section>

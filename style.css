@@ -14,12 +14,8 @@ img{max-width:100%;}
 [class*=col]{padding:0;}
 
 .overflow-x{overflow-x: hidden;}
-.hide{display: none;}
 
-
-/* div, section{border: 1px solid yellow;} */
-/* font-family: 'Jost', sans-serif; 300,400,500*/ 
-/* font-family: 'Martel', serif; 400,600,700,800*/
+/* --------------------COLORS */
 /* dark grey: #606060 */
 /* green: #1C9C42 */
 /* blacker: #444444 */
@@ -28,8 +24,11 @@ img{max-width:100%;}
 /* dark tan: #B9ADA2 */
 /* tan: #D7CCC2 */
 
+
 /* ---------------------------------------UTILITY/GENERAL CLASSES + STYLES------------- */
 /* --------------------TYPOGRAPHY */
+/* font-family: 'Jost', sans-serif; 300,400,500*/ 
+/* font-family: 'Martel', serif; 400,600,700,800*/
 body{
     background-color: #D7CCC2;
     color: #000000;
@@ -154,10 +153,6 @@ hr{
 
 .border{border: 3px solid #000000;}
 
-.underlined-no-m{ 
-    /* border-bottom: 2px solid #000000; */
-    margin-bottom: 0;}
-
 .underlined{
     border-bottom: 2px solid #000000;
     margin-bottom: 1rem;
@@ -169,43 +164,25 @@ hr{
 
 .vertical-line{padding: 0 .25%;}
 
-                    /* --------------------PADDING + MARGIN */
-                    .padded{padding:5%;}
-                    .padded-sm{padding:2.5%;}
-                    .padded-r-8{padding-right:8%;}
-                    /* no longer on dontations */
-                    .padded-r-15{padding-right:15%;}
-                    /* contact */
-                    .padded-sm-lr{padding:5% 2.5%;}
-                    /* embedded video intro */
-                    .padded-sm-tb{padding:2.5% 5%;}
-                    .padded-xs-tb{padding:1.5% 0;}
-                    .padded-xs{padding:1.5%;}
-                    div.centered.col-12.grid-center.padded-b-2{margin-bottom:1.75rem;}
-                    .donator-links{padding-left:10%;
-                    padding-top:2.5%;}
-                    /* donations */
-                    .padded-trb{padding:5% 5% 5% 0;}
-                    /* no longer embedded video intro */
-                    .margin-b-5{margin-bottom:.5rem;}
-                    .margin-top-1{margin-top:2rem;}
+/* --------------------PADDING + MARGIN */
+.padded{padding:5%;}
+.padded-sm{padding:2.5%;}
+.padded-xs{padding:1.5%;}
+                    
+.padded-r-15{padding-right:15%;}
+.padded-sm-tb{padding:2.5% 5%;}
 
+div.centered.col-12.grid-center.padded-b-2{margin-bottom:1.75rem;}
 
-                    /* --------------------HEIGHT + WIDTH */
-                    .tall-5{min-height:5vh;}
-                    .tall-25{min-height: 25vh;}
-                    .tall-70{height: 70vh;}
-                    .tall-55{height: 55vh;}
-                    .tall-60{height:60vh;}
-                    .tall-75{height:75vh;}
-                    .tall-80{height: 80vh;}
-
+/* --------------------HEIGHT + WIDTH */
+.tall-70{height: 70vh;}
+.tall-60{height:60vh;}
 
 /* --------------------BUTTONS */
 .btn-green{
     background-color:#1C9C42;
-    color:#FFFFFF;
     border-radius: 8px;
+    color:#FFFFFF;
     font-family: 'Martel', serif;
     font-size:.85rem;
     margin:1% 0;
@@ -284,6 +261,24 @@ hr{
     min-height: 100%
 }
 
+.portrait-tall{padding-bottom:175%;}
+.portrait{padding-bottom:125%;}
+.square{padding-bottom:100%;}
+.landscape{padding-bottom:66%;}
+.landscape-wide{padding-bottom:56%;}
+
+.bg-pos-t{background-position:top;}
+.bg-pos-b{background-position: bottom;}
+.bg-pos-l{background-position: left;}
+.bg-pos-r{background-position: right;}
+.bg-pos-center{background-position: center;}
+.bg-pos-tc{background-position: center top;}
+.bg-pos-tl{background-position: top left;}
+.bg-pos-tr{background-position: top right;}
+.bg-pos-bc{background-position: center bottom;}
+.bg-pos-bl{background-position: bottom left;}
+.bg-pos-br{background-position: bottom right;}
+
 /* --------------------HEADER */
 .bg-train-track{
     background-image:url('images/train-track-four.png');
@@ -296,14 +291,6 @@ hr{
 .bg-image-history{
     background-image: url('/images/our-history-background.jpg');
     background-position: 50% 36%;
-    background-repeat: none;
-    background-size: cover;
-}
-
-/* --------------------GALLERY */
-.bg-image-gallery-banner{
-    /* background-image: url('/images/three-wcrr-trains.jpg'); */
-    background-position: center;
     background-repeat: none;
     background-size: cover;
 }
@@ -364,19 +351,19 @@ hr{
 
 .mobile-menu a:hover{color:#EB1A21;}
 
-
 /* --------------------FOOTER */
 footer p{
     font-size: .8rem;
     padding: .5% 1% .5% 0;
 }
 
-
 /* --------------------INDEX  */
 .image-home{height:70vh;}
 
 .index-intro{padding:5% 5% 5% 0;}
 .index-intro h1{margin-bottom:.5rem;}
+
+.video-padding{padding:5% 2.5%;}
 
 .fa-solid{
     color:#1C9C42;
@@ -426,93 +413,41 @@ div.slider-item{padding:0;}
     padding: 5% 5% 0 0;
 }
 
+.history h2{margin-bottom:.2rem;}
+
 .image-history{
     border: 3px solid #000000;
     height:60vh;   
 }
 
-.history h2{margin-bottom:.2rem;}
-
 .history-pad-l{padding: 5% 5% 5% 0;}
 .history-pad-r{padding: 5% 0 5% 5%;}
 
-.history-text-one{
+.history-text{
     position:absolute;
     right:215px;
 }
-.history-text-two{
+.history-text-right{
     position:absolute;
     left:215px;
 }
-.history-text-three{
-    position:absolute;
-    right:215px;
-}
-
-/* .history-part-two{padding-top:10%;} */
-/* .history-part-three{padding:10% 0 5%;} */
-
 
 /* --------------------GALLERY */
-.gallery-banner-title{background: #D7CCC2;
-padding: 2% 2% 1.5%;
-text-align:center;
+.gallery-banner-title{
+    background: #D7CCC2;
+    padding: 2% 2% 1.5%;
+    text-align:center;
 }
-
-/* .bg-image-gallery{
-    background-position: center;
-    background-repeat: none;
-    background-size: cover;
-    height:500px;
-    width:100%;
-} */
-
-.relative{position: relative;}
-
-
-                /* Filterable Gallery Styles   */
-                /* .pop-up-gallery .bg-image-gallery {padding-bottom: 10%;} */
-                /* .gallery [class*=col] {padding: 0.4rem;}
-                .hidden {display: none;} */
-
-                
-/* Responsive Image Utility Classes  */
-
-.bg-image-g {
-	background-color: rgb(240,240,240);
-  background-size: cover; 
-  /* background-position: center;  */
-  background-repeat: no-repeat;
-}
-
-.portrait-tall{padding-bottom:175%;}
-.portrait{padding-bottom:125%;}
-.square{padding-bottom:100%;}
-.landscape{padding-bottom:66%;}
-.landscape-wide{padding-bottom:56%;}
-
-.bg-pos-t{background-position:top;}
-.bg-pos-b{background-position: bottom;}
-.bg-pos-l{background-position: left;}
-.bg-pos-r{background-position: right;}
-.bg-pos-center{background-position: center;}
-
-.bg-pos-tc{background-position: center top;}
-.bg-pos-tl{background-position: top left;}
-.bg-pos-tr{background-position: top right;}
-.bg-pos-bc{background-position: center bottom;}
-.bg-pos-bl{background-position: bottom left;}
-.bg-pos-br{background-position: bottom right;}
 
 .gallery [class*="col-"]{padding:0.5%;}
 
-/* .bg-1 { background-image: url('https://source.unsplash.com/Sg3XwuEpybU'); }
-.bg-2 { background-image: url('https://source.unsplash.com/yihlaRCCvd4'); }
-.bg-3 { background-image: url('https://source.unsplash.com/G8cB8hY3yvU'); } */
-
-
 /* --------------------DONTAIONS */
 .donate{padding-right:8%;}
+
+.donator-links{
+    padding-left:10%;
+    padding-top:2.5%;
+}
 
 /* --------------------CONTACT */
 .image-contact{
@@ -582,10 +517,7 @@ form textarea{min-height: 8rem;}
 
 
 /* --------------------MEMBERSHIP */
-.login-section{
-    /* height:90vh; */
-    position:relative;
-}
+.login-section{position:relative;}
 
 .become-member{
     background-color:#606060;
@@ -614,10 +546,6 @@ form textarea{min-height: 8rem;}
 .announcments ul{
     list-style-type:circle;} 
 
-/* .member-banner{height:5rem;} */
-
-
-
 /* --------------------EMBEDDED MAP */
 .map{padding:5%}
 .hours{padding:5%;}
@@ -628,7 +556,6 @@ form textarea{min-height: 8rem;}
     overflow:hidden;
     padding-bottom:25.25%;
     position:relative;
-    
 }
 
 .map-responsive iframe{
@@ -637,38 +564,30 @@ form textarea{min-height: 8rem;}
     position:absolute; 
     top:0;
     width:100%;
-    
 }
+
 
 /* ----------------------------------------MEDIA QUERIES------------- */
 /* --------------------DEFAULT RESPONSIVE STYLES */
 .mobile-show{display:none;}
+.hide{display: none;}
 
 /* --------------------LG MEDIA QUERY (128em / 2048px) */
-@media(max-width:128em){
-}
+/* @media(max-width:128em){
+} */
 
 @media(max-width:75em){
-    .image-contact{
-        height: 30vh;
-    }
-.history-text-one{
-    right:210px;
-}
-.history-text-two{
-    left:210px;
-}
-.history-text-three{
-    right:210px;
-}
-    /* .history-text-one{right:70px;} */
-    /* .history-text-two{left:70px;} */
-    /* .history-text-three{right:70px;} */
-    .image-history{
-    height:50vh;   
-}
- .history-pad-l{padding: 7rem 5% 7rem 0;}
-.history-pad-r{padding: 13rem 0 13rem 5%;}
+    /* -----------HISTORY */
+    .history-pad-l{padding: 7rem 5% 7rem 0;}
+    .history-pad-r{padding: 13rem 0 13rem 5%;}
+
+    .history-text{right:210px;}
+    .history-text-right{left:210px;}
+
+    .image-history{height:50vh;}
+    
+    /* -----------CONTACT */
+    .image-contact{height: 30vh;}    
 }
 
 /* --------------------MD MEDIA QUERY (64em / 1024px) */
@@ -684,8 +603,6 @@ form textarea{min-height: 8rem;}
 
     /* -----------PADDING + MARGIN */
 
-    /* -----------BACKGROUND/IMAGES */
-
     /* -----------FOOTER */
     footer p{padding: .75% 1% 1.25% 0;}
 
@@ -693,19 +610,10 @@ form textarea{min-height: 8rem;}
     .index-intro{padding:3.5% 5% 4.5%;}
 
     /* -----------HISTORY */
-    .image-history{height:40vh;}
+    .image-history{height:50vh;}
 
-    .history-text-one{right:70px;}
-    .history-text-two{left:70px;}
-    .history-text-three{right:70px;}
-
-    /* .history-pad-l{padding: 7rem 5% 7rem 0;}
-.history-pad-r{padding: 13rem 0 13rem 5%;} */
-
-    /* .history-part-one{padding-top: 4rem;} */
-    /* .history-part-two{padding-top:13rem;} */
-    /* .history-part-three{padding:16rem 0 8rem;} */
-
+    .history-text{right:70px;}
+    .history-text-right{left:70px;}
 
     /* -----------DONATIONS */
     .donations h1{font-size: 1.5rem;}
@@ -715,7 +623,6 @@ form textarea{min-height: 8rem;}
         padding-left:5%;
         padding-top:2.5%;
     }
-
 
     /* -----------CONTACT */
     .contact-intro{padding:7% 5%;}
@@ -727,29 +634,24 @@ form textarea{min-height: 8rem;}
 
     /* -----------MEMBERSHIP */
     .login-section{height: 105vh;}
-    .become-member{padding:5.5% 6% 4% 3.5%;
-}
-
-    .member-login{padding: 16% 2%;
-}
+    .become-member{padding:5.5% 6% 4% 3.5%;}
+    .member-login{padding: 16% 2%;}
     .member-login h2{font-size:1.5rem;}
 
     .calendar-responsive{
-    height:0;
-    overflow:hidden;
-    padding-bottom:75.25%;
-    position:relative;
-    
-}
+        height:0;
+        overflow:hidden;
+        padding-bottom:75.25%;
+        position:relative;
+    }
 
-.calendar-responsive iframe{
-    height:100%;
-    left:0;
-    position:absolute; 
-    top:0;
-    width:100%;
-    
-}
+    .calendar-responsive iframe{
+        height:100%;
+        left:0;
+        position:absolute; 
+        top:0;
+        width:100%;   
+    }
 
     /* -----------EMBEDDED MAP  */
     .map{padding:10% 7%;}
@@ -759,8 +661,7 @@ form textarea{min-height: 8rem;}
 
 
 @media(max-width:760px){
-        .login-section{height: 110vh;}
-
+    .login-section{height: 110vh;}
 }
 /* --------------------SM Media Query (48em / 768px) */
 @media(max-width:48em){
@@ -769,21 +670,23 @@ form textarea{min-height: 8rem;}
     .mobile-show{display:block;}
     .flip-sm{flex-direction: column-reverse;}
     
-    /* br{margin-bottom:.5rem;} */
-    
     /* -----------TYPOGRAPHY */
-    /* html{ font-size:14px; }     */
     .sm-left{text-align: left;}
     .sm-right{text-align: right;}
     .sm-center{text-align: center;}
 
+    .big-text{font-size:2.2rem;}
+    .ex-big-text{
+        font-size:2.2rem;
+        margin-top:1rem;
+    }
+
     /* -----------PADDING + MARGIN */
     .sm-padded{padding:5%;}
-    .sm-padded-l{padding:10% 7.5%;}
-        .smm-padded{padding:10% 15% 10% 8%;}
-        .smml-padded{padding:10% 0 10% 12%;}
-
     .sm-padded-lg{padding:10% 7.5%}
+    .sm-padded-b{padding-bottom: 5%;}
+
+    /* -----------HEIGHT + WIDTH */
     .sm-tall-50{height:50vh;}
     
     /* -----------BACKGROUNDS */
@@ -796,59 +699,29 @@ form textarea{min-height: 8rem;}
         margin: 0 2rem;
     }
 
+    /* -----------FOOTER */
+    footer p{line-height:2;}
+
     /* -----------INDEX */
     .image-home{height:45vh;}
     .bullet-points div{padding:7% 3%;}
 
     /* -----------HISTORY */
+    .history-pad-l{padding: 3rem 5% 1.5rem 0;}
+    .history-pad-r{padding: 1.5rem 0 3rem 5%;}
 
-       .image-history{height:40vh;}
+    .image-history{height:40vh;}
 
-    .history-text-one{
+    .history-text{
         position: relative;
         left:100px;
         bottom: 35px;
- }
-    .history-text-two{
+    }
+    .history-text-right{
         position:relative;
-
         left:-100px;
         top:35px
-    /* bottom: -360px; */
-}
-    .history-text-three{position:relative;left:100px;
-    bottom:35px}
-                    /* TODO */
-                    /* .image-history{
-                        height:45vh;
-                         position:absolute; 
-                    } */
-.tall-25-sm{min-height:25vh;}
-                     .history-pad-l{padding: 3rem 5% 1.5rem 0;}
-.history-pad-r{padding: 1.5rem 0 3rem 5%;}
-
-                    /* .img-1{top:480px;} */
-                    /* .img-2{top:1300px;} */
-                    /* .img-3{top:1815px;} */
-
-                    /* .history-text-one{ */
-                        /* position:static; */
-                        /* bottom:80px; */
-                        /* top:0px; */
-                        /* left:0px; */
-                    /* } */
-                    /* .history-text-two{
-                        position:relative;
-                        left:0px;
-                    }
-                    .history-text-three{
-                        position:relative;
-                        right:70px;
-                    } */
-
-                    /* .history-part-one{padding-top: 4rem;} */
-                    /* .history-part-two{padding-top:20rem;} */
-                    /* .history-part-three{padding:20rem 0 25rem;} */
+    }
 
     /* -----------DONTAIONS */
     .donorbox{padding:10% 0;}
@@ -857,24 +730,18 @@ form textarea{min-height: 8rem;}
         padding-left:0;
         padding-top:2%;
     }
-                    /* TODO */
-                    .pad-s{padding-left:4.5%;
-                        padding-bottom: 5%;;
-                    }
-                    .sm-grid-right{
-                        position:relative;
-                        right:0;
-                    }
-                    /* .sm-padded-nr{padding: 5% 0 5% 5%;} */
-                    .pad-l{padding-left:5%;}
 
-
-
+    .sm-grid-right{
+        position:relative;
+        right:0px;
+    }
+ 
+    .sm-donate-l-padded{padding:10% 15% 10% 8%;}
+    .sm-donate-r-padded{padding:10% 0 10% 12%;}                    
+                    
     /* -----------CONTACT */
     .contact-intro{padding:10% 5% 20%;}
-    .big-text{font-size:2.2rem;}
-    .ex-big-text{font-size:2.2rem;
-    margin-top:1rem;}
+    .contact-intro a{line-height:2;}
 
     .image-contact{
         height: auto;
@@ -884,7 +751,6 @@ form textarea{min-height: 8rem;}
     .contact-form{padding:10% 5%;}
 
     /* -----------MEMBERSHIP */
-
     .login-section{height: 120vh;}
 
     .become-member{
@@ -913,17 +779,12 @@ form textarea{min-height: 8rem;}
 
     .member-login h2{font-size:1.6rem;}
 
-    /* .members-head{margin:0 4%;} */
-    .member-banner .btn-green{padding:4.5% 6.5%;
-    font-size:.9rem;}
+    .member-banner .btn-green{
+        font-size:.9rem;
+        padding:4.5% 6.5%;
+    }
 
-    .calendar-responsive{
-    height:0;
-    overflow:hidden;
-    padding-bottom:90%;
-    position:relative;
-    
-}
+    .calendar-responsive{padding-bottom:90%;}
 
     /* -----------EMDEDDED MAP*/
     .map{padding:15% 10%;}
@@ -934,10 +795,7 @@ form textarea{min-height: 8rem;}
         margin-top:2.5rem;
         margin-bottom:0;
         padding-bottom:45.25%;
-    }
-
-    footer p{line-height:2;}
-    .contact-intro a{line-height:2;}
+    }    
 }
 
 /* --------------------XS Media Query (36em / 576px) */
@@ -945,16 +803,13 @@ form textarea{min-height: 8rem;}
     .xs-hide{display: none;}
     .xs-show {display: block;}
 
-    .gallery-banner-title{
-padding: 3.5% 2% 1.5%;
-}
+    /* -----------GALLERY*/
+    .gallery-banner-title{padding: 3.5% 2% 1.5%;}
 
+    /* -----------MEMBERSHIP*/
     .login-section{height: 115vh;}
-
 }
 
 /* --------------------XXS Media Query (25em / 400px) */
-@media (max-width: 25em) {
-        /* .login-section{height: 125vh;} */
-
-} 
+/* @media (max-width: 25em) {
+}  */

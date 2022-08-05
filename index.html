@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Willow Creek RR Home
+title: WCRR - Home
 seo-description: 
 gallery:
   - _image: /images/wcrr-steam.jpg
@@ -23,20 +23,15 @@ video: <iframe src="https://player.vimeo.com/video/601565882?h=d66cdbe14e&title=
     <div class="slider-container">
         {% for item in page.gallery %}
         <div class="slider-item">
-            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-70 sm-tall-50 {{item.image-position}}" style="background-image: url('{{item._image}}');">
-    </div>
+            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-70 sm-tall-50 {{item.image-position}}" style="background-image: url('{{item._image}}');"></div>
         </div>
-
-        <!-- <div class="slider-item">
-            <div class="fill image-home"><img src="{{item._image}}" alt="{{item.image-alt-text}}"/></div>
-        </div> -->
         {% endfor %}
     </div>
 </section>
 
 <!-- --------------------EMBEDDED VIDEO + INTRO------------------- -->
 <section class="grid-middle padded-sm">
-    <div class="col-7_md-12 padded-sm-lr md-hide">
+    <div class="col-7_md-12 video-padding md-hide">
         <div style="padding:56.25% 0 0 0;position:relative;" class="shadow">
             {{page.video}}
         </div>
@@ -58,7 +53,7 @@ video: <iframe src="https://player.vimeo.com/video/601565882?h=d66cdbe14e&title=
             We hope to see you soon! All aboard!
         </p>
     </div>
-    <div class="col-7_md-12 padded-sm-lr hide md-show">
+    <div class="col-7_md-12 video-padding hide md-show">
         <div style="padding:56.25% 0 0 0;position:relative;" class="shadow">
             {{page.video}}
         </div>
