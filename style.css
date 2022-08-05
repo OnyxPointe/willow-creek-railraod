@@ -872,7 +872,7 @@ form textarea{min-height: 8rem;}
     .calendar-responsive{
     height:0;
     overflow:hidden;
-    padding-bottom:100%;
+    padding-bottom:90%;
     position:relative;
     
 }
