@@ -26,3 +26,8 @@ lightGallery(document.getElementById('lightgallery'), {
         speed: 500,
         download: false
 });
+
+// ------------ANIMATE ON SCROLL
+AOS.init({
+    duration: 500
+    });
