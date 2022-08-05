@@ -768,6 +768,7 @@ form textarea{min-height: 8rem;}
     .mobile-hide{display: none;}
     .mobile-show{display:block;}
     .flip-sm{flex-direction: column-reverse;}
+    
     /* br{margin-bottom:.5rem;} */
     
     /* -----------TYPOGRAPHY */
@@ -801,21 +802,21 @@ form textarea{min-height: 8rem;}
 
     /* -----------HISTORY */
 
-       .image-history{height:50vh;}
+       .image-history{height:40vh;}
 
     .history-text-one{
         position: relative;
-        left:135px;
+        left:100px;
         bottom: 35px;
  }
     .history-text-two{
         position:relative;
 
-        right:135px;
+        left:-100px;
         top:35px
     /* bottom: -360px; */
 }
-    .history-text-three{position:relative;left:135px;
+    .history-text-three{position:relative;left:100px;
     bottom:35px}
                     /* TODO */
                     /* .image-history{
@@ -823,8 +824,8 @@ form textarea{min-height: 8rem;}
                          position:absolute; 
                     } */
 .tall-25-sm{min-height:25vh;}
-                     .history-pad-l{padding: 3rem 5% 3rem 0;}
-.history-pad-r{padding: 3rem 0 3rem 5%;}
+                     .history-pad-l{padding: 3rem 5% 1.5rem 0;}
+.history-pad-r{padding: 1.5rem 0 3rem 5%;}
 
                     /* .img-1{top:480px;} */
                     /* .img-2{top:1300px;} */
