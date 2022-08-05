@@ -17,7 +17,7 @@ img{max-width:100%;}
 .hide{display: none;}
 
 
-/* div, section{border: 1px solid yellow;} */
+div, section{border: 1px solid yellow;}
 /* font-family: 'Jost', sans-serif; 300,400,500*/ 
 /* font-family: 'Martel', serif; 400,600,700,800*/
 /* dark grey: #606060 */
@@ -192,6 +192,7 @@ hr{
 
 
                     /* --------------------HEIGHT + WIDTH */
+                    .tall-5{min-height:5vh;}
                     .tall-25{min-height: 25vh;}
                     .tall-70{height: 70vh;}
                     .tall-55{height: 55vh;}
@@ -350,6 +351,7 @@ hr{
     display:none;
     padding:5%;
     text-align:center;
+    z-index:2;
 }
 
 .mobile-menu a{
@@ -426,26 +428,29 @@ div.slider-item{padding:0;}
 
 .image-history{
     border: 3px solid #000000;
-    height:65vh;   
+    height:60vh;   
 }
 
 .history h2{margin-bottom:.2rem;}
 
+.history-pad-l{padding: 5% 5% 5% 0;}
+.history-pad-r{padding: 5% 0 5% 5%;}
+
 .history-text-one{
     position:absolute;
-    right:330px;
+    right:215px;
 }
 .history-text-two{
     position:absolute;
-    left:330px;
+    left:215px;
 }
 .history-text-three{
     position:absolute;
-    right:330px;
+    right:215px;
 }
 
-.history-part-two{padding-top:10%;}
-.history-part-three{padding:10% 0 5%;}
+/* .history-part-two{padding-top:10%;} */
+/* .history-part-three{padding:10% 0 5%;} */
 
 
 /* --------------------GALLERY */
@@ -645,8 +650,25 @@ form textarea{min-height: 8rem;}
 
 @media(max-width:75em){
     .image-contact{
-        height: 40vh;
+        height: 30vh;
     }
+.history-text-one{
+    right:210px;
+}
+.history-text-two{
+    left:210px;
+}
+.history-text-three{
+    right:210px;
+}
+    /* .history-text-one{right:70px;} */
+    /* .history-text-two{left:70px;} */
+    /* .history-text-three{right:70px;} */
+    .image-history{
+    height:50vh;   
+}
+ .history-pad-l{padding: 7rem 5% 7rem 0;}
+.history-pad-r{padding: 13rem 0 13rem 5%;}
 }
 
 /* --------------------MD MEDIA QUERY (64em / 1024px) */
@@ -671,15 +693,18 @@ form textarea{min-height: 8rem;}
     .index-intro{padding:3.5% 5% 4.5%;}
 
     /* -----------HISTORY */
-    .image-history{height:50vh;}
+    .image-history{height:40vh;}
 
     .history-text-one{right:70px;}
     .history-text-two{left:70px;}
     .history-text-three{right:70px;}
 
-    .history-part-one{padding-top: 4rem;}
-    .history-part-two{padding-top:13rem;}
-    .history-part-three{padding:16rem 0 8rem;}
+    /* .history-pad-l{padding: 7rem 5% 7rem 0;}
+.history-pad-r{padding: 13rem 0 13rem 5%;} */
+
+    /* .history-part-one{padding-top: 4rem;} */
+    /* .history-part-two{padding-top:13rem;} */
+    /* .history-part-three{padding:16rem 0 8rem;} */
 
 
     /* -----------DONATIONS */
@@ -775,32 +800,54 @@ form textarea{min-height: 8rem;}
     .bullet-points div{padding:7% 3%;}
 
     /* -----------HISTORY */
+
+       .image-history{height:50vh;}
+
+    .history-text-one{
+        position: relative;
+        left:135px;
+        bottom: 35px;
+ }
+    .history-text-two{
+        position:relative;
+
+        right:135px;
+        top:35px
+    /* bottom: -360px; */
+}
+    .history-text-three{position:relative;left:135px;
+    bottom:35px}
                     /* TODO */
-                    .image-history{
+                    /* .image-history{
                         height:45vh;
-                        position:absolute;
-                    }
+                         position:absolute; 
+                    } */
+.tall-25-sm{min-height:25vh;}
+                     .history-pad-l{padding: 3rem 5% 3rem 0;}
+.history-pad-r{padding: 3rem 0 3rem 5%;}
 
-                    .img-1{top:480px;}
-                    .img-2{top:1300px;}
-                    .img-3{top:1815px;}
+                    /* .img-1{top:480px;} */
+                    /* .img-2{top:1300px;} */
+                    /* .img-3{top:1815px;} */
 
-                    .history-text-one{
-                        position:relative;
-                        right:70px;
-                    }
-                    .history-text-two{
+                    /* .history-text-one{ */
+                        /* position:static; */
+                        /* bottom:80px; */
+                        /* top:0px; */
+                        /* left:0px; */
+                    /* } */
+                    /* .history-text-two{
                         position:relative;
                         left:0px;
                     }
                     .history-text-three{
                         position:relative;
                         right:70px;
-                    }
+                    } */
 
-                    .history-part-one{padding-top: 4rem;}
-                    .history-part-two{padding-top:20rem;}
-                    .history-part-three{padding:20rem 0 25rem;}
+                    /* .history-part-one{padding-top: 4rem;} */
+                    /* .history-part-two{padding-top:20rem;} */
+                    /* .history-part-three{padding:20rem 0 25rem;} */
 
     /* -----------DONTAIONS */
     .donorbox{padding:10% 0;}

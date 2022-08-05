@@ -1,0 +1,44 @@
+<section class="bg-image-history history">
+    <!-- --------------------HISTORY HEADING------------------- -->
+    <div class="right grid-right">
+        <div class="col-5_md-7_sm-11 history-title">
+            <h1 class="uppercase ex-big-text left editable">Our History</h1>
+        </div>
+    </div>
+
+    <!-- --------------------HISTORY - PART 1------------------- -->
+    <div class="history-part-one grid-middle flip-sm">
+        <div class="col-6_md-7_sm-10 image-history img-1 fill"> <img src="{{page.first_image}}" alt="{{page.first-image-alt-text}}"/></div>
+        <div class="col-4_md-5_sm-9 bg-tan padded-sm history-text-one sm-padded">
+            <h2 class="editable">Founded in 1975</h2>
+            <p class="editable">Willow Creek Railroad Museum began as an added attraction to Antique Powerland in 1975. Just two individuals initiated it and started with 600 feet of track in a farm field with no trees, green grass or buildings.</p>
+            <p class="editable">In 1993 our club became an official organization and in 1997 we received our official Non-Profit status from the IRS as well as a long-term lease agreement with Antique Powerland.</p>
+        </div>
+        <!-- <div class="col-6 bg-image bg-image-history-one"></div>
+        <div class="col-4 bg-tan padded-sm history-text-one">
+            <h2 class="editable">Founded in 1975</h2>
+            <p class="editable">Willow Creek Railroad Museum began as an added attraction to Antique Powerland in 1975. Just two individuals initiated it and started with 600 feet of track in a farm field with no trees, green grass or buildings.</p>
+            <p class="editable">In 1993 our club became an official organization and in 1997 we received our official Non-Profit status from the IRS as well as a long-term lease agreement with Antique Powerland.</p>
+        </div> -->
+    </div>
+
+    <!-- --------------------HISTORY - PART 2------------------- -->
+    <div class="history-part-two grid-right-middle">
+        <div class="history-text-two col-4_md-5_sm-9 bg-tan padded-sm sm-padded">
+            <h2 class="editable">Heading</h2>
+            <p class="editable">Since the start in 1975, more people became interested in the live steam modeling hobby and as this interest grew, so did the membership and the layout. By the mid ’90’s there were about 30 members running on a layout of approximately 2500 feet of track which included a small carbarn, roundhouse, bridges and a creek with green grass and landscaping.</p>
+            <p class="editable">In 1998 the members started the planning stages of a completely new layout which would more than double our trackage. In 2001 we completed the track portion of our new plan to enlarge our track to over 5000 feet, which allowed us to handle larger live steam locomotives and provide more of a feeling of a prototypical railroad. This first phase of the project took almost five years to complete - although no layout is ever complete.</p>
+        </div>
+        <div class="col-6_md-7_sm-10 image-history img-2 fill"><img src="{{page.second_image}}" alt="{{page.second-image-alt-text}}"/></div>
+    </div>
+
+    <!-- --------------------HISTORY - PART 3------------------- -->
+    <div class="history-part-three grid-middle flip-sm">
+        <div class="col-6_md-7_sm-10 image-history img-3 fill"><img src="{{page.third_image}}" alt="{{page.third-image-alt-text}}"/></div>
+        <div class="history-text-three col-4_md-5_sm-9 bg-tan padded-sm sm-padded">
+            <h2 class="editable">Heading</h2>
+            <p class="editable">Since the main track was installed we have continued to upgrade and expand our railroad. The upgrades have included more storage for trains with the addition of additional sidings, a new carbarn and a period station cover. We have also been installing a block signal system which includes signal bridges.</p>
+            <p class="editable">Projects for the near future include a new creek and waterfall, roundhouse replacement, additional signal upgrades, the East Side Industrial Loop and clubhouse remodel to include a false front to match the period style initiative underway on the Powerland campus.</p>
+        </div>
+    </div>
+</section>
