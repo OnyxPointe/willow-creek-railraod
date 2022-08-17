@@ -6,11 +6,13 @@ announcments:
   - announcment:
   - announcment:
   - announcment:
+  - announcment:
+  - announcment:
 needed:
-  - item-needed: Test
   - item-needed:
   - item-needed:
-  - item-needed: Wine barrel water feature
+  - item-needed:
+  - item-needed:
 calendar-embed-code: >-
   https://calendar.google.com/calendar/embed?src=wcrrcal%40gmail.com&ctz=America%2FLos_Angeles
 ---
@@ -32,10 +34,12 @@ calendar-embed-code: >-
 <!-- --------------------ANNOUNCMENTS + ITEMS NEEDED ------------------- -->
 <section class="announcments grid padded sm-padded-lg">
     <div class="col-6_sm-12 padded-sm">
-        <h2 class="md-text editable">Announcments:</h2>
+        <h2 class="md-text editable">
+            To DO Projects:
+        </h2>
         <ul>
             {% for item in page.announcments %}
-            <li class="editable"><!--base32-PQSSK7BFG5BCKN2CNF2GK3JOMFXG433VNZRW2ZLOOQSTORBFG5CHYJJFPQ======-base32--></li>
+            <li class="editable"><!--base32-MJQXGZJTGIWVAUKTKNFTOQSGI42UEQ2LJYZEGTSGGJDUWM2KJ5GUMWCHGQZTGVSOLJJFOMS2JRHU6UKTKRHVEQSGI42UGSCZJJFEMUCRHU6T2PJ5HUWWEYLTMUZTE===-base32-->Organize Nelson container<br /></li>
             {% endfor %}
         </ul>
     </div>
@@ -43,7 +47,7 @@ calendar-embed-code: >-
         <h2 class="md-text editable">Items Needed:</h2>
         <ul>
             {% for item in page.needed %}
-            <li class="editable">{{item.item-needed}}Outdoor speakers<br /></li>
+            <li class="editable"><!--base32-PQSSK7BFG5BCKN2CNF2GK3JONF2GK3JNNZSWKZDFMQSTORBFG5CHYJJFPQ======-base32-->Wine barrel water feature<br /></li>
             {% endfor %}
         </ul>
     </div>
