@@ -526,8 +526,8 @@ form textarea{min-height: 8rem;}
     box-shadow:0px 7px 29px 0px rgba(100, 100, 111, 0.2); 
     color:#FFFFFF;
     margin: 5rem 0;
-    padding:4% 8% 4% 3%;
-    height:65vh;
+    padding:4% 4% 4% 3%;
+    height:80vh;
 }
 
 .member-login{
@@ -537,7 +537,7 @@ form textarea{min-height: 8rem;}
     margin: 5rem 0;
     padding: 10% 2%;
     text-align: center;
-    height:65vh;
+    height:80vh;
 }
 
 .meber-login h1{margin-bottom:.5rem;}
@@ -752,7 +752,7 @@ form textarea{min-height: 8rem;}
     .contact-form{padding:10% 5%;}
 
     /* -----------MEMBERSHIP */
-    .login-section{height: 120vh;}
+    .login-section{height: 140vh;}
 
     .become-member{
         border-radius: 0 25px 25px 0;
@@ -808,7 +808,7 @@ form textarea{min-height: 8rem;}
     .gallery-banner-title{padding: 3.5% 2% 1.5%;}
 
     /* -----------MEMBERSHIP*/
-    .login-section{height: 115vh;}
+    .login-section{height: 125vh;}
 }
 
 /* --------------------XXS Media Query (25em / 400px) */
