@@ -354,6 +354,36 @@ div.centered.col-12.grid-center.padded-b-2{margin-bottom:1.75rem;}
 
 .mobile-menu a:hover{color:#EB1A21;}
 
+/* --------------------DROPDOWN MENU */
+.dropbtn {padding: 16px;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #D7CCC2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {color: #EB1A21;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {color: #EB1A21;}
+
 /* --------------------FOOTER */
 footer p{
     font-size: .8rem;
