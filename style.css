@@ -172,6 +172,8 @@ hr{
 .padded-r-15{padding-right:15%;}
 .padded-sm-tb{padding:2.5% 5%;}
 
+.margin-t{margin:2rem 0 0;}
+
 div.centered.col-12.grid-center.padded-b-2{margin-bottom:1.75rem;}
 
 /* --------------------HEIGHT + WIDTH */
@@ -547,6 +549,10 @@ form textarea{min-height: 8rem;}
 .announcments ul{
     list-style-type:circle;} 
 
+.past-gazettes a{
+    text-decoration: underline;
+}
+
 /* --------------------EMBEDDED MAP */
 .map{padding:5%}
 .hours{padding:5%;}
@@ -603,6 +609,7 @@ form textarea{min-height: 8rem;}
     .md-text{font-size: 1.5rem;}
 
     /* -----------PADDING + MARGIN */
+    .md-padded{padding:5%;}
 
     /* -----------FOOTER */
     footer p{padding: .75% 1% 1.25% 0;}

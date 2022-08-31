@@ -2,6 +2,51 @@
 layout: default
 title: WCRR - Donations
 seo-description:
+donors:
+  - donor-name: All American Toy Company
+    donor-site-link: https://allamericantoyco.com/
+  - donor-name: Al's Garden Center
+    donor-site-link: https://als-gardencenter.com/
+  - donor-name: Amtrak
+    donor-site-link: https://www.amtrak.com/home
+  - donor-name: Bryant Tree Expert Service
+    donor-site-link: http://www.bryanttree.net/
+  - donor-name: Cowart Landscaping
+    donor-site-link: https://www.facebook.com/Cowart-Landscape-Co-LCB-8420-240685335961241/
+  - donor-name: DeSantis Landscapes
+    donor-site-link: https://desantislandscapes.com/
+  - donor-name: Elm Ridge Mfg., Inc.
+    donor-site-link: 
+donors-continued-two:
+  - donor-name: Evergreen Aviation & Space Museum
+    donor-site-link: https://www.evergreenmuseum.org/
+  - donor-name: Fred Meyer
+    donor-site-link: https://www.fredmeyer.com/
+  - donor-name: F&W Fence Co.
+    donor-site-link: https://fwfence.com/
+  - donor-name: Heiser Farms Pumpkin Patch
+    donor-site-link: https://www.heiserfarms.com/
+  - donor-name: Knez Building Materials
+    donor-site-link: https://www.knezinc.com/
+  - donor-name: Lowes
+    donor-site-link: https://www.lowes.com/
+  - donor-name: Menehune Magic Catering
+    donor-site-link: https://www.facebook.com/profile.php?id=100040970053634
+donors-continued-three:
+  - donor-name: Pacific Service Center
+    donor-site-link: https://www.pacificservicecenter.com/
+  - donor-name: PM Back Flow Testing
+    donor-site-link: https://pmbackflow.com/
+  - donor-name: Positive Energy Electric
+    donor-site-link: https://www.positiveenergy.biz/
+  - donor-name: Ram Steel Company
+    donor-site-link: https://ramsteelco.com/
+  - donor-name: Salem Tool
+    donor-site-link: https://www.salemtools.net/
+  - donor-name: United Rentals
+    donor-site-link: https://www.unitedrentals.com/
+  - donor-name:
+    donor-site-link:
 ---
 <!-- --------------------DONATE SECTION------------------- -->
 <section class="donations grid-spaceBetween padded sm-donate-l-padded">
@@ -29,35 +74,23 @@ seo-description:
     <div class="col-12_sm-11 grid">
         <div class="col-4_sm-12 donator-links">
             <ul>
-                <li><a target="_blank" class="editable" href="https://allamericantoyco.com/">All American Toy Company</a></li>
-                <li><a target="_blank" class="editable" href="https://als-gardencenter.com/">Al's Garder Center</a></li>
-                <li><a target="_blank" class="editable" href="https://www.amtrak.com/home">Amtrak</a></li>
-                <li><a target="_blank" class="editable" href="http://www.bryanttree.net/">Bryant Tree Expert Service</a></li>
-                <li><a target="_blank" class="editable" href="https://www.facebook.com/Cowart-Landscape-Co-LCB-8420-240685335961241/">Cowart Landscaping</a></li>
-                <li><a target="_blank" class="editable" href="https://desantislandscapes.com/">DeSantis Landscapes</a></li>
-                <li><a target="_blank" class="editable" href="#">Elm Ridge Mfg., Inc.</a></li>
+                {% for item in page.donors %}
+                <li><a target="_blank" href="{{item.donor-site-link}}">{{item.donor-name}}</a></li>
+                {% endfor %}
             </ul>
         </div>
         <div class="col-4_sm-12 donator-links">
             <ul>
-                <li><a target="_blank" class="editable" href="https://www.evergreenmuseum.org/">Evergreen Aviation & Space Museum</a></li>
-                <li><a target="_blank" class="editable" href="https://www.fredmeyer.com/">Fred Meyer</a></li>
-                <li><a target="_blank" class="editable" href="https://fwfence.com/">F&W Fence Co.</a></li>
-                <li><a target="_blank" class="editable" href="https://www.heiserfarms.com/">Heiser Farms Pumpkin Patch</a></li>
-                <li><a target="_blank" class="editable" href="https://www.knezinc.com/">Knez Building Materials</a></li>
-                <li><a target="_blank" class="editable" href="https://www.lowes.com/">Lowes</a></li>
-                <li><a target="_blank" class="editable" href="https://www.facebook.com/profile.php?id=100040970053634">Menehune Magic Catering</a></li>
+                {% for item in page.donors-continued-two %}
+                <li><a target="_blank" href="{{item.donor-site-link}}">{{item.donor-name}}</a></li>
+                {% endfor %}
             </ul>
         </div>
         <div class="col-4_sm-12 donator-links">
             <ul>
-                <li><a target="_blank" class="editable" href="https://www.pacificservicecenter.com/">Pacific Service Center</a></li>
-                <li><a target="_blank" class="editable" href="https://pmbackflow.com/">PM Back Flow Testing</a></li>
-                <li><a target="_blank" class="editable" href="https://www.positiveenergy.biz/">Positive Energy Electric</a></li>
-                <li><a target="_blank" class="editable" href="https://ramsteelco.com/">Ram Steel Company</a></li>
-                <li><a target="_blank" class="editable" href="https://www.salemtools.net/">Salem Tool</a></li>
-                <li><a target="_blank" class="editable" href="https://www.unitedrentals.com/">United Rentals</a></li>
-                <li><a target="_blank" class="editable" href=""></a></li>
+                {% for item in page.donors-continued-three %}
+                <li><a target="_blank" href="{{item.donor-site-link}}">{{item.donor-name}}</a></li>
+                {% endfor %}
             </ul>
         </div>
     </div>
