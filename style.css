@@ -384,6 +384,12 @@ div.centered.col-12.grid-center.padded-b-2{margin-bottom:1.75rem;}
 
 .dropdown:hover .dropbtn {color: #EB1A21;}
 
+.dropdown-arrow{
+    font-weight:100;
+    font-size:1.3rem;
+    /* margin-top: 1rem; */
+}
+
 /* --------------------FOOTER */
 footer p{
     font-size: .8rem;
