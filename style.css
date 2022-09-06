@@ -209,7 +209,6 @@ div.centered.col-12.grid-center.padded-b-2{margin-bottom:1.75rem;}
     color:#FFFFFF;
     font-family: 'Martel', serif;
     font-size:.85rem;
-    margin:4% 0;
     padding:2.3% 5% 2%;
     text-transform: uppercase;
 }
@@ -387,7 +386,6 @@ div.centered.col-12.grid-center.padded-b-2{margin-bottom:1.75rem;}
 .dropdown-arrow{
     font-weight:100;
     font-size:1.3rem;
-    /* margin-top: 1rem; */
 }
 
 /* --------------------FOOTER */
@@ -646,6 +644,9 @@ form textarea{min-height: 8rem;}
 
     /* -----------PADDING + MARGIN */
     .md-padded{padding:5%;}
+
+    /* -----------HEADER */
+    .dropdown-content {background-color: #B9ADA2;}
 
     /* -----------FOOTER */
     footer p{padding: .75% 1% 1.25% 0;}
