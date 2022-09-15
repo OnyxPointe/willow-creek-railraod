@@ -168,7 +168,8 @@ hr{
 .padded{padding:5%;}
 .padded-sm{padding:2.5%;}
 .padded-xs{padding:1.5%;}
-                    
+
+.padded-lr{padding:0 5%;}                    
 .padded-r-15{padding-right:15%;}
 .padded-sm-tb{padding:2.5% 5%;}
 
@@ -179,6 +180,7 @@ div.centered.col-12.grid-center.padded-b-2{margin-bottom:1.75rem;}
 /* --------------------HEIGHT + WIDTH */
 .tall-70{height: 70vh;}
 .tall-60{height:60vh;}
+.tall-40{height:40vh;}
 
 /* --------------------BUTTONS */
 .btn-green{
@@ -188,7 +190,8 @@ div.centered.col-12.grid-center.padded-b-2{margin-bottom:1.75rem;}
     font-family: 'Martel', serif;
     font-size:.85rem;
     margin:1% 0;
-    padding:2.3% 3.5% 1.5%;
+    /* padding:2.3% 3.5% 1.5%; */
+    padding: 1rem 2rem .75rem;
     text-transform: uppercase;
 }
 
@@ -209,7 +212,7 @@ div.centered.col-12.grid-center.padded-b-2{margin-bottom:1.75rem;}
     color:#FFFFFF;
     font-family: 'Martel', serif;
     font-size:.85rem;
-    padding:2.3% 5% 2%;
+    padding: .7rem 1.7rem .6rem;
     text-transform: uppercase;
 }
 

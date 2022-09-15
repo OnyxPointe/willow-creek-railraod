@@ -1,0 +1,63 @@
+---
+layout: private
+title: WCRR - Past Gazettes
+banner_image: /images/aerial-view-wcrr.jpg
+past-gazettes:
+  - gazette-title: Spring 2021
+    gazette-pdf-link: uploads/2021-2-Spring-Gazette.pdf
+  - gazette-title: Gazette Title
+    gazette-pdf-link: 
+  - gazette-title: Gazette Title
+    gazette-pdf-link: 
+past-gazettes-second-column:
+  - gazette-title: Winter 2021
+    gazette-pdf-link: uploads/2021-1-Winter-Gazette.pdf
+  - gazette-title: Gazette Title
+    gazette-pdf-link: 
+  - gazette-title: Gazette Title
+    gazette-pdf-link: 
+past-gazettes-third-column:
+  - gazette-title: Gazette Title
+    gazette-pdf-link: 
+  - gazette-title: Gazette Title
+    gazette-pdf-link: 
+  - gazette-title: Gazette Title
+    gazette-pdf-link: 
+---
+
+<!-- --------------------HEADER BANNER------------------- -->
+<section class=" grid-middle-center bg-image tall-60 grid-center-middle" style="background-image: url('{{page.banner_image}}');">
+    <div class="bg-tan centered padded-sm col-4_md-6_sm-10">
+        <h1 class="editable big-text">Past Gazettes</h1>
+        <a class="underlined" href="/index.html">Main website</a>
+        <span class="padded-lr"> | </span>
+        <a class="underlined" href="/members.html">Members page</a>
+    </div>
+</section>
+
+<!-- --------------------PAST GAZETTE LINKS------------------- -->
+<section class="padded-sm">
+    <div class="col-12_sm-11 grid">
+        <div class="col-4_sm-12 donator-links">
+            <ul>
+                {% for item in page.past-gazettes %}
+                <li><a target="_blank" href="{{item.gazette-pdf-link}}">{{item.gazette-title}}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-4_sm-12 donator-links">
+            <ul>
+                {% for item in page.past-gazettes-second-column %}
+                <li><a target="_blank" href="{{item.gazette-pdf-link}}">{{item.gazette-title}}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-4_sm-12 donator-links">
+            <ul>
+                {% for item in page.past-gazettes-third-column %}
+                <li><a target="_blank" href="{{item.gazette-pdf-link}}">{{item.gazette-title}}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
