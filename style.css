@@ -157,6 +157,7 @@ hr{
     border-bottom: 2px solid #000000;
     margin-bottom: 1rem;
 }
+
 .underlined-yellow{
     border-bottom: 3px solid #FFF100;
     margin-bottom: 1rem;
@@ -190,7 +191,6 @@ div.centered.col-12.grid-center.padded-b-2{margin-bottom:1.75rem;}
     font-family: 'Martel', serif;
     font-size:.85rem;
     margin:1% 0;
-    /* padding:2.3% 3.5% 1.5%; */
     padding: 1rem 2rem .75rem;
     text-transform: uppercase;
 }
@@ -383,6 +383,7 @@ div.centered.col-12.grid-center.padded-b-2{margin-bottom:1.75rem;}
 .dropdown-content a:hover {color: #EB1A21;}
 
 .dropdown:hover .dropdown-content {display: block;}
+.dropdown:active .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {color: #EB1A21;}
 
