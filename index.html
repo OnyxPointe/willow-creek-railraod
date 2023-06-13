@@ -16,17 +16,14 @@ gallery:
     image-alt-text:
     image-position: bg-pos-r
 video: >-
-  <iframe width="560" height="315" class="youtube-video"
-  src="https://www.youtube.com/embed/9Kq3O2-ARrA" title="YouTube video player"
-  frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-  encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/9Kq3O2-ARrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 ---
 <!-- --------------------INDEX INTRO CAROURSEL------------------- -->
 <section>
     <div class="slider-container">
         {% for item in page.gallery %}
         <div class="slider-item">
+            <!-- can use aria lable inplace of alt -->
             <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-70 sm-tall-50 {{item.image-position}}" style="background-image: url('{{item._image}}');"></div>
         </div>
         {% endfor %}
@@ -34,13 +31,18 @@ video: >-
 </section>
 
 <!-- --------------------EMBEDDED VIDEO + INTRO------------------- -->
-<section class="grid-middle padded-sm">
-    <div class="col-7_md-12 video-padding md-hide">
+<section class="grid-middle padded-sm padded-l-10-video">
+    <!-- VIMEO VIDEO -->
+    <!-- <div class="col-7_md-12 video-padding md-hide">
         <div style="padding:56.25% 0 0 0;position:relative;" class="shadow">
-            {{page.video}}
         </div>
+    </div> -->
+    <!-- YOUTUBE VIDEO -->
+    <div class="video-container col-7_md-12 md-hide padded-lr">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9Kq3O2-ARrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    <div class="index-intro col-5_md-12">
+
+    <div class="index-intro col-4_md-12">
         <h1 class="editable">
             Large Scale<br />Model Railroading
         </h1>
@@ -57,10 +59,16 @@ video: >-
             We hope to see you soon! All aboard!
         </p>
     </div>
-    <div class="col-7_md-12 video-padding hide md-show">
+    <!-- VIMEO VIDEO -->
+    <!-- <div class="col-7_md-12 video-padding hide md-show">
         <div style="padding:56.25% 0 0 0;position:relative;" class="shadow">
-            {{page.video}}
+           
         </div>
+    </div> -->
+
+    <!-- YOUTUBE VIDEO -->
+    <div class="video-container col-7_md-12 hide md-show">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9Kq3O2-ARrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 </section>
 
