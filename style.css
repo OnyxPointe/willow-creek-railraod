@@ -449,6 +449,12 @@ div.slider-item{padding:0;}
   color:#EFEFEF;
 }
 
+/* --------------------YOUTUBE EMBED*/
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
 /* --------------------HISTORY */
 .history-title{
     border-bottom:2px solid #000000;
