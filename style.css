@@ -487,7 +487,7 @@ div.slider-item{padding:0;}
 
 .image-operating{
     border: 3px solid #000000;
-    height:80vh;   
+    width:100%;  
 }
 
 .history-pad-l{padding: 5% 5% 5% 0;}
