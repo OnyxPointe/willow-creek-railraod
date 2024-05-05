@@ -494,7 +494,7 @@ div.slider-item{padding:0;}
     background-size: cover;
 }
 
-.image-op-h{height:350px;
+.image-op-h{height:672px;}
 
 .history-pad-l{padding: 5% 5% 5% 0;}
 .history-pad-r{padding: 5% 0 5% 5%;}
@@ -701,6 +701,9 @@ form textarea{min-height: 8rem;}
 
     /* -----------HISTORY */
     .image-history{height:50vh;}
+    
+    .image-op-h{height:410px;}
+
 
     .history-text{right:70px;}
     .history-text-right{left:70px;}
@@ -801,6 +804,8 @@ form textarea{min-height: 8rem;}
     .history-pad-r{padding: 1.5rem 0 3rem 5%;}
 
     .image-history{height:40vh;}
+    
+    .image-op-h{height:350px;}
 
     .history-text{
         position: relative;
