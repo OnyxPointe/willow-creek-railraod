@@ -178,6 +178,7 @@ hr{
 .padded-sm-tb{padding:2.5% 5%;}
 
 .margin-t{margin:2rem 0 0;}
+.margin-t-sm{margin-top:10px;}
 .margin-b{margin-bottom:2rem;}
 
 div.centered.col-12.grid-center.padded-b-2{margin-bottom:1.75rem;}
@@ -846,7 +847,7 @@ form textarea{min-height: 8rem;}
     .contact-form{padding:10% 5%;}
 
     /* -----------MEMBERSHIP */
-    .login-section{height: 145vh;}
+    .login-section{height: 160vh;}
 
     .become-member{
         border-radius: 0 25px 25px 0;
