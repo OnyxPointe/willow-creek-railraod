@@ -847,7 +847,7 @@ form textarea{min-height: 8rem;}
     .contact-form{padding:10% 5%;}
 
     /* -----------MEMBERSHIP */
-    .login-section{height: 160vh;}
+    .login-section{height: 140vh;}
 
     .become-member{
         border-radius: 0 25px 25px 0;
@@ -903,7 +903,7 @@ form textarea{min-height: 8rem;}
     .gallery-banner-title{padding: 3.5% 2% 1.5%;}
 
     /* -----------MEMBERSHIP*/
-    .login-section{height: 125vh;}
+    .login-section{height: 138vh;}
 }
 
 /* --------------------XXS Media Query (25em / 400px) */
