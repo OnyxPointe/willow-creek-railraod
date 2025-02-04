@@ -18,6 +18,16 @@ gallery:
   - _image: /images/old-photo-5.jpg
     image-alt-text:
     image-position: bg-pos-bc
+gallery-two:
+  - _image: /images/merch-mug.jpg
+    image-alt-text:
+    image-position: bg-pos-tc
+  - _image: /images/merch-pin.jpg
+    image-alt-text:
+    image-position: bg-pos-tc
+  - _image: /images/merch-button.jpg
+    image-alt-text:
+    image-position: bg-pos-center
 ---
 <!-- --------------------SCHEDULE SECTION--------------- -->
  <section class="padded bg-texture m-p"> 
@@ -100,11 +110,20 @@ gallery:
 
 <!-- --------------------MERCH SECTION------------------ -->
 <section class="grid-center-middle padded m-p-t">
-    <div class="col-6_sm-12 padded grid tall-70">
+    <div class="col-6_sm-12 padded grid tall-70 mobile-hide">
         <div class="col-7 bg-img-merch-1 border-tan"></div>
         <div class="col-5 bg-img-merch-2 border-tan"></div>
         <div class="col-5 bg-img-merch-3 border-tan mobile-hide bg-dark-tan"></div>
         <div class="col-7_sm-12 bg-img-merch-4 border-tan"></div>
+    </div>
+
+    <div class="slider-container col-6_sm-12 padded mobile-show">
+        {% for item in page.gallery-two %}
+        <div class="slider-item">
+            <!-- can use aria lable inplace of alt -->
+            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-70 sm-tall-50 {{item.image-position}}" style="background-image: url('{{item._image}}');"></div>
+        </div>
+        {% endfor %}
     </div>
     <div class="col-6_sm-12 padded">
         <h2 class="uppercase sm-text underlined-yellow editable">Limited Edition Merch</h2>
@@ -115,11 +134,14 @@ gallery:
 
 <!-- --------------------CTA - SEE YOU------------------- -->
 <section class="padded m-p-t m-p">
-    <div class="centered">
-        <h6 class="uppercase lg-text green-text padded-b martel editable">See you there!</h6>
+    <div class="grid-center-middle">
+        <div class="col-5_md-3 padded-xs right mobile-hide"><img src="/images/50-logo.jpg" class="img-circle h-img-150"/></div>
+        <div class="col-7_md-9_sm-12 sm-center">
+            <h6 class="uppercase lg-text green-text padded-b martel editable">See you there!</h6>
 
-        <p class="editable">
-            Still have questions? Feel free to send us an <a href="mailto:">email</a>.
-        </p>
+            <p class="editable">
+                Still have questions? Feel free to send us an <a href="mailto:">email</a>.
+            </p>
+        </div>
     </div>
 </section>

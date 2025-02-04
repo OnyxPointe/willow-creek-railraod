@@ -201,6 +201,8 @@ hr{
 
 .vertical-line{padding: 0 .25%;}
 
+
+
 /* --------------------PADDING + MARGIN */
 .padded{padding:5%;}
 .padded-sm{padding:2.5%;}
@@ -227,6 +229,7 @@ div.centered.col-12.grid-center.padded-b-2{margin-bottom:1.75rem;}
 .tall-70{height: 70vh;}
 .tall-60{height:60vh;}
 .tall-40{height:40vh;}
+.h-img-150{height: 100px;}
 
 /* --------------------BUTTONS */
 .btn-green{
@@ -451,6 +454,8 @@ footer p{
     padding: 5% 5% 5%;
 }
 
+.img-circle{border-radius:50%;}
+
 .bg-texture{
     background-image: url('/images/bg-texture.jpg');
     background-repeat: repeat;
@@ -512,6 +517,12 @@ footer p{
 }
 
 .anniversary-li{
+    list-style-type: square;
+    margin-left:1.75rem;
+    font-size: 1.2rem;
+    font-weight:300;
+}
+.anniversary-li-map{
     list-style-type: square;
     margin-left:1.75rem;
     font-size: 1.2rem;
@@ -770,6 +781,9 @@ form textarea{min-height: 8rem;}
 .mobile-show{display:none;}
 .hide{display: none;}
 
+.md-show{display: hide;}
+.md-hide{display: block;}
+
 /* --------------------LG MEDIA QUERY (128em / 2048px) */
 /* @media(max-width:128em){
 } */
@@ -801,6 +815,8 @@ form textarea{min-height: 8rem;}
     .text-mdd{font-size:1.3rem;}
     .lg-text{font-size: 1.8rem;}
 
+    .md-center{text-align:center;}
+
     /* -----------PADDING + MARGIN */
     .md-padded{padding:5%;}
 
@@ -812,6 +828,9 @@ form textarea{min-height: 8rem;}
 
     /* -------------50th */
     .fb-links{padding: 0 5% 10%;}
+    .anniversary-li-map{
+        margin-left:0;
+    }   
 
     /* -----------INDEX */
     .index-intro{padding:3.5% 5% 4.5%;}
