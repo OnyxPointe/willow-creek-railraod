@@ -448,7 +448,7 @@ footer p{
 .shadow-tx{text-shadow: 3px 3px #9797979e;}
 
 .fb-links{
-    padding: 0 5% 5%;
+    padding: 5% 5% 5%;
 }
 
 .bg-texture{
@@ -897,7 +897,7 @@ form textarea{min-height: 8rem;}
         margin-top:1rem;
     }
     .xxl-text{
-        font-size:2.75rem;
+        font-size:2.5rem;
         font-weight:700;
     }
 
@@ -926,11 +926,16 @@ form textarea{min-height: 8rem;}
     footer p{line-height:2;}
 
     /* -------------50th */
+
+    .anniversary-li{
+        margin-left:1.2rem;
+    }
     .m-p{
         padding-bottom: 10%;
     }
 
     .m-p-t{padding-top:10%;}
+    .mmb{margin-bottom:10px;}
 
     .day-1, .day-2{
         margin-bottom: 2.5rem;
