@@ -1,0 +1,119 @@
+---
+layout: default
+title: WCRR - 50th Anniversary
+seo-description:
+gallery:
+  - _image: /images/old-photo-1.jpg
+    image-alt-text:
+    image-position: bg-pos-tc
+  - _image: /images/old-photo-2.jpg
+    image-alt-text:
+    image-position: bg-pos-tc
+  - _image: /images/old-photo-3.jpg
+    image-alt-text:
+    image-position: bg-pos-tc
+  - _image: /images/old-photo-4.jpg
+    image-alt-text:
+    image-position: bg-pos-tc
+  - _image: /images/old-photo-5.jpg
+    image-alt-text:
+    image-position: bg-pos-bc
+---
+
+<!-- --------------------SCHEDULE SECTION--------------- -->
+ <section class="padded bg-texture"> 
+    <div class="centered">
+        <h1 class="uppercase padded-rbl md-text">All aboard for the <br/> <span class="xxl-text green-text margin-t-sm shadow-tx">Golden <br class="mobile-show"/> Anniversary</span></h1>
+        <!-- <h2 class="uppercase sm-text">Celebrating 50 Years of Railroading: 1975-2025</h2> -->
+    </div>
+    <div class="grid-center-middle padded-rl">
+        <div class="col-4_sm-12 day-1">
+            <div class="padded-lg tall-70">
+                <h2 class="uppercase centered md-text">Fri. July 11</h2>
+                <ul class="anniversary-li">
+                    <li>Visiting engines run Fri-Sun</li>
+                    <li>Camping and storage available</li>
+                    <li>Partner museum tours</li>
+                    <li>Dinner meal</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-4_sm-12 day-2">
+            <div class="padded-lg tall-70">
+                <h2 class="uppercase centered md-text">Sat. July 12</h2>
+                <ul class="anniversary-li">
+                    <li>2pm: Anniversary ceremony</li>
+                    <li>Golden spike presentation</li>
+                    <li>Trolley rides and carbarn tours</li>
+                    <li>Dinner meal and live music</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-4_sm-12 day-3">
+            <div class="padded-lg tall-70">
+                <h2 class="uppercase centered md-text">Sun. July 13</h2>
+                <ul class="anniversary-li">
+                    <li>10am-4pm: Open house</li>
+                    <li>WCRR train rides and tours</li>
+                    <li>Trolley rides</li>
+                    <li>Custom merch available</li>
+                </ul>
+            </div>
+        </div>
+        <div class="margin-t-md">
+            <a href="" class="btn-green padded-sm">Registration Form</a>
+        </div>
+    </div>
+ </section>
+
+<!-- --------------------HISTORY SECTION---------------- -->
+<section class="grid-center-middle padded">
+    <div class="slider-container col-7_sm-12 padded">
+        {% for item in page.gallery %}
+        <div class="slider-item">
+            <!-- can use aria lable inplace of alt -->
+            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-70 sm-tall-50 {{item.image-position}}" style="background-image: url('{{item._image}}');"></div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="col-5_sm-12 padded">
+        <h3 class="sm-text">50 Years of Railroading: 1975-2025</h3>
+        <p>Willow Creek Railroad Museum was started by just two individuals in 1975. Now, out membership includes almost 100 people. We give 10,000 train rides to the public annually, as one of fourteen museums and attractions at Powerland Heritage Park. We hope you will join us in celebrating 50 years of railroading history this summer!</p>
+    </div>
+</section>
+
+
+<!-- --------------------EMBEDDED MAP------------------- -->
+{% include embedded-map-two.html %}
+
+
+<!-- --------------------FACEBOOK LINKS----------------- -->
+ <section class="bg-image-50th padded bg-dark-tan">
+    <div class="centered">
+        <h4 class="md-text thin martel">Follow along on Facebook for updates about the event:</h4>
+        <a href="#" class="inline-block uppercase btn-green">Stay up to date</a>
+    </div> 
+</section>
+
+<!-- --------------------MERCH SECTION------------------ -->
+<section class="grid-center-middle padded">
+    <div class="col-6_sm-12 padded grid tall-70">
+        <div class="col-7 bg-img-merch-1 border-tan"></div>
+        <div class="col-5 bg-img-merch-2 border-tan"></div>
+        <div class="col-5 bg-img-merch-3 border-tan"></div>
+        <div class="col-7 bg-img-merch-4 border-tan"></div>
+    </div>
+    <div class="col-6_sm-12 padded">
+        <h2 class="uppercase sm-text">Limited Edition Merch</h2>
+        <p>Be sure to stop by the Willow Creek Railroad Company Store to get your 50th anniversary merchandise. We will have; shirts, mugs, pins, coins, stickers, and more!</p>
+    </div>
+
+</section>
+
+<!-- --------------------CTA - SEE YOU------------------- -->
+<section class="padded">
+    <div class="centered">
+        <h6 class="uppercase lg-text green-text padded-b martel">See you there!</h6>
+        <p>Still have questions? Feel free to send us an <a href="mailto:">email</a>.</p>
+    </div>
+</section>
