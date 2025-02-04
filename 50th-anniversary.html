@@ -20,10 +20,10 @@ gallery:
     image-position: bg-pos-bc
 ---
 <!-- --------------------SCHEDULE SECTION--------------- -->
- <section class="padded bg-texture"> 
+ <section class="padded bg-texture m-p"> 
     <div class="centered">
         <h1 class="uppercase padded-rbl md-text editable">
-            All aboard for the <br /> <span class="xxl-text green-text margin-t-sm shadow-tx">Golden <br /> Anniversary</span>
+            All aboard for the <br /> <span class="xxl-text green-text margin-t-sm shadow-tx">Golden <br class="mobile-show"/> Anniversary</span>
         </h1>
         <!-- <h2 class="uppercase sm-text">Celebrating 50 Years of Railroading: 1975-2025</h2> -->
     </div>
@@ -70,7 +70,7 @@ gallery:
  </section>
 
 <!-- --------------------HISTORY SECTION---------------- -->
-<section class="grid-center-middle padded">
+<section class="grid-center-middle padded m-p-t">
     <div class="slider-container col-7_sm-12 padded">
         {% for item in page.gallery %}
         <div class="slider-item">
@@ -85,23 +85,21 @@ gallery:
     </div>
 </section>
 
-
-<!-- --------------------EMBEDDED MAP------------------- -->
-{% include embedded-map-two.html %}
-
-
 <!-- --------------------FACEBOOK LINKS----------------- -->
- <section class="bg-image-50th padded bg-dark-tan">
+ <section class="bg-image-50th fb-links">
     <div class="centered">
-        <h4 class="md-text thin martel editable">Follow along on Facebook for updates about the event:</h4>
+        <h4 class="text-mdd thin martel editable">Follow us on Facebook for event updates:</h4>
         <a class="inline-block uppercase btn-green editable" target="_blank" href="https://www.facebook.com/groups/1453616608603335">
             Stay up to date
         </a>
     </div> 
 </section>
 
+<!-- --------------------EMBEDDED MAP------------------- -->
+{% include embedded-map-two.html %}
+
 <!-- --------------------MERCH SECTION------------------ -->
-<section class="grid-center-middle padded">
+<section class="grid-center-middle padded m-p">
     <div class="col-6_sm-12 padded grid tall-70">
         <div class="col-7 bg-img-merch-1 border-tan"></div>
         <div class="col-5 bg-img-merch-2 border-tan"></div>
@@ -116,9 +114,10 @@ gallery:
 </section>
 
 <!-- --------------------CTA - SEE YOU------------------- -->
-<section class="padded">
+<section class="padded m-p-t m-p">
     <div class="centered">
         <h6 class="uppercase lg-text green-text padded-b martel editable">See you there!</h6>
+
         <p class="editable">
             Still have questions? Feel free to send us an <a href="mailto:">email</a>.
         </p>

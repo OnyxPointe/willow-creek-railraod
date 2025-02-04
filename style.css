@@ -142,6 +142,7 @@ hr{
 
 .sm-text{font-size:1.3rem;}
 .md-text{font-size:1.7rem;}
+.text-mdd{font-size:1.5rem;}
 .lg-text{font-size:2.2rem;}
 .big-text{
     font-size:2.4rem;
@@ -445,6 +446,10 @@ footer p{
 .margin-r-map{margin-right: 2.75rem;}
 .pad-r-map{padding-right:20px;}
 .shadow-tx{text-shadow: 3px 3px #9797979e;}
+
+.fb-links{
+    padding: 0 5% 5%;
+}
 
 .bg-texture{
     background-image: url('/images/bg-texture.jpg');
@@ -793,6 +798,7 @@ form textarea{min-height: 8rem;}
     /* -----------TYPOGRAPHY */    
     html{ font-size:15px; }
     .md-text{font-size: 1.5rem;}
+    .text-mdd{font-size:1.3rem;}
     .lg-text{font-size: 1.8rem;}
 
     /* -----------PADDING + MARGIN */
@@ -805,6 +811,7 @@ form textarea{min-height: 8rem;}
     footer p{padding: .75% 1% 1.25% 0;}
 
     /* -------------50th */
+    .fb-links{padding: 0 5% 10%;}
 
     /* -----------INDEX */
     .index-intro{padding:3.5% 5% 4.5%;}
@@ -890,7 +897,7 @@ form textarea{min-height: 8rem;}
         margin-top:1rem;
     }
     .xxl-text{
-        font-size:3rem;
+        font-size:2.75rem;
         font-weight:700;
     }
 
@@ -919,17 +926,23 @@ form textarea{min-height: 8rem;}
     footer p{line-height:2;}
 
     /* -------------50th */
+    .m-p{
+        padding-bottom: 10%;
+    }
+
+    .m-p-t{padding-top:10%;}
+
     .day-1, .day-2{
         margin-bottom: 2.5rem;
         border:none;
         background-color: #B9ADA2;
-        height:40vh;
+        height:45vh;
     }
     .day-3{
         border:none;
         background-color: #B9ADA2;
         margin-bottom: 1.5rem;
-        height: 40vh;
+        height: 45vh;
     }
 
     /* -----------INDEX */
