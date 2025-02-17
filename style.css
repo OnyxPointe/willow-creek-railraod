@@ -194,6 +194,8 @@ hr{
     margin-bottom: 1rem;
 }
 
+.tx-underlined{text-decoration: underline;}
+
 .underlined-yellow{
     border-bottom: 3px solid #FFF100;
     margin-bottom: 1rem;
@@ -208,6 +210,7 @@ hr{
 .padded-sm{padding:2.5%;}
 .padded-xs{padding:1.5%;}
 .padded-lg{padding:8.5%;}
+.padded-x-lg{padding:2.5% 8.5%;}
 
 .padded-l-10-video{padding-left:10%;}
 .padded-lr{padding:0 5%;}                    
@@ -456,6 +459,13 @@ footer p{
 
 .img-circle{border-radius:50%;}
 
+.bg-ticket{
+    background-image: url('/images/open-house.jpg');
+    /* background-position: 50% 36%; */
+    background-repeat: none;
+    background-size: cover;
+}
+
 .bg-texture{
     background-image: url('/images/bg-texture.jpg');
     background-repeat: repeat;
@@ -482,7 +492,7 @@ footer p{
     background-size: cover;
 }
 .bg-img-merch-3{
-    background-image: url('');
+    background-image: url('/images/merch-sticker.jpg');
     background-position: 50% 36%;
     background-repeat: none;
     background-size: cover;
@@ -522,6 +532,13 @@ footer p{
     font-size: 1.2rem;
     font-weight:300;
 }
+
+.anniversary-li-two{
+    list-style-type: square;
+    font-size: 1.2rem;
+    font-weight:300;
+}
+
 .anniversary-li-map{
     list-style-type: square;
     margin-left:1.75rem;
