@@ -234,6 +234,7 @@ div.centered.col-12.grid-center.padded-b-2{margin-bottom:1.75rem;}
 .tall-40{height:40vh;}
 .h-img-150{height: 100px;}
 
+
 /* --------------------BUTTONS */
 .btn-green{
     background-color:#1C9C42;
@@ -927,6 +928,8 @@ form textarea{min-height: 8rem;}
     .sm-right{text-align: right;}
     .sm-center{text-align: center;}
 
+    .padded-x-lg{padding:5% 0 0;}
+
     .big-text{font-size:2.2rem;}
     .ex-big-text{
         font-size:2.2rem;
@@ -936,6 +939,7 @@ form textarea{min-height: 8rem;}
         font-size:2.5rem;
         font-weight:700;
     }
+    .sm-text-sm{font-size:1rem;}
 
     /* -----------PADDING + MARGIN */
     .sm-padded{padding:5%;}
