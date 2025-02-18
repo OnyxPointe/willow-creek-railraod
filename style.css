@@ -956,7 +956,8 @@ form textarea{min-height: 8rem;}
 
     /* -----------PADDING + MARGIN */
     .sm-padded{padding:5%;}
-    .sm-padded-lg{padding:10% 7.5%}
+    .sm-padded-lg{padding:10% 7.5%;}
+    .sm-padded-lgg{padding:10% 5%;}
     .sm-padded-b{padding-bottom: 5%;}
     .sm-padded-t{padding-top:5%;}
 
