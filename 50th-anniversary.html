@@ -35,10 +35,10 @@ gallery-two:
 <!-- --------------------HEADER SECTION---------------- -->
  <section class="padded bg-texture m-p"> 
     <div class="centered">
-        <h1 class="uppercase padded-rbl md-text editable">
+        <h1 class="uppercase padded-rbl md-text sm-text-sm editable sm-padded-t">
             All aboard for the <br /> <span class="xxl-text green-text margin-t-sm shadow-tx">Golden <br class="mobile-show"/> Anniversary</span> <br/> of Willow Creek Railroad.
         </h1>
-        <h2 class="uppercase sm-text editable thin mobile-hide">Annual Memorial Meet Celebrating 50 years of model railroading</h2>
+        <h2 class="uppercase sm-text editable thin sm-text-sm jost">Annual Memorial Meet Celebrating 50 years of model railroading</h2>
     </div>
  </section>
 
@@ -127,17 +127,17 @@ gallery-two:
   </section>
 
 <!-- --------------------MERCH SECTION------------------ -->
-<section class="grid-center-middle padded m-p-t">
-    <div class="col-6_sm-12 padded centered">
+<section class="grid-center-middle padded m-p-t bg-dark-tan">
+    <div class="col-6_sm-12 padded centered sm-order-2">
         <h2 class="uppercase sm-text underlined-yellow editable">Limited Edition Merch</h2>
         <p class="editable">Be sure to stop by the Willow Creek Railroad Company Store to get your 50th anniversary merchandise. We will have: shirts, mugs, pins, coins, stickers, and more!</p>
     </div>
     <!-- -------- GALLERY ON MD+ SCREENS -------- -->
     <div class="col-6_sm-12 padded grid tall-70 mobile-hide">
-        <div class="col-7 bg-img-merch-1 border-tan"></div>
-        <div class="col-5 bg-img-merch-2 border-tan"></div>
-        <div class="col-5 bg-img-merch-3 border-tan"></div>
-        <div class="col-7 bg-img-merch-4 border-tan"></div>
+        <div class="col-7 bg-img-merch-1 border-tan-d"></div>
+        <div class="col-5 bg-img-merch-2 border-tan-d"></div>
+        <div class="col-5 bg-img-merch-3 border-tan-d"></div>
+        <div class="col-7 bg-img-merch-4 border-tan-d"></div>
     </div>
 
     <!-- -------- GALLERY ON SM SCREENS --------- -->
@@ -145,7 +145,7 @@ gallery-two:
         {% for item in page.gallery-two %}
         <div class="slider-item">
             <!-- can use aria lable inplace of alt -->
-            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-70 sm-tall-50 {{item.image-position}}" style="background-image: url('{{item._image}}');"></div>
+            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-40 sm-tall-50 {{item.image-position}}" style="background-image: url('{{item._image}}');"></div>
         </div>
         {% endfor %}
     </div>
