@@ -950,6 +950,8 @@ form textarea{min-height: 8rem;}
     }
     .sm-text-sm{font-size:1rem;}
 
+    .shadow-tx{text-shadow: 2px 2px #9797979e;}
+
     .sm-order-2{order:2;}
 
     /* -----------PADDING + MARGIN */
@@ -959,6 +961,7 @@ form textarea{min-height: 8rem;}
     .sm-padded-t{padding-top:5%;}
 
     .margin-t-md{margin-top:.5rem;}
+    .margin-t-sm{margin-top:.2rem;}
 
 
     /* -----------HEIGHT + WIDTH */
