@@ -3,6 +3,14 @@ layout: default
 title: WCRR - Home
 seo-description:
 gallery:
+  - _image: /images/anniversary-banner.png
+    image-class-show-hide: mobile-hide
+    image-alt-text:
+    image-position: bg-pos-center
+  - _image: /images/anniversary-banner-mobile.png
+    image-class-show-hide: mobile-show
+    image-alt-text:
+    image-position: bg-pos-center
   - _image: /images/wcrr-steam.jpg
     image-alt-text:
     image-position: bg-pos-tc
@@ -24,7 +32,7 @@ video: >-
         {% for item in page.gallery %}
         <div class="slider-item">
             <!-- can use aria lable inplace of alt -->
-            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-70 sm-tall-50 {{item.image-position}}" style="background-image: url('{{item._image}}');"></div>
+            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-70 sm-tall-50 {{item.image-position}} {{item.image-class-show-hide}}" style="background-image: url('{{item._image}}');"></div>
         </div>
         {% endfor %}
     </div>

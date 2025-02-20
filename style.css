@@ -230,6 +230,7 @@ hr{
 .margin-t-md{margin-top:1.5rem;}
 .margin-t-sm{margin-top:10px;}
 .margin-b{margin-bottom:2rem;}
+.margin-b-sm{margin-bottom:.75rem;}
 .margin-b-0{margin-bottom:0;}
 .margin{margin:2px;}
 
@@ -970,6 +971,9 @@ form textarea{min-height: 8rem;}
     
     /* -----------BACKGROUNDS */
     .bg-membership{background-position: 95% 36%;}
+
+    .h-img-150{height: 75px;}
+
 
     /* -----------HEADER */
     .header{min-height:15vh;}
