@@ -237,6 +237,7 @@ hr{
 div.centered.col-12.grid-center.padded-b-2{margin-bottom:1.75rem;}
 
 /* --------------------HEIGHT + WIDTH */
+.tall-80{height: 80vh;}
 .tall-70{height: 70vh;}
 .tall-60{height:60vh;}
 .tall-40{height:40vh;}
