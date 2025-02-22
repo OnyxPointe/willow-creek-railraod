@@ -3,6 +3,9 @@ layout: default
 title: WCRR - Home
 seo-description:
 gallery:
+  - _image: /images/anniversary-banner-all-screens.png
+    image-alt-text:
+    image-position: bg-pos-center
   - _image: /images/wcrr-steam.jpg
     image-alt-text:
     image-position: bg-pos-tc
@@ -25,7 +28,8 @@ video: >-
         <div class="slider-item">
             <!-- can use aria lable inplace of alt -->
             <!-- Was tall-70 before 50th Page was added -->
-            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-80 sm-tall-50 {{item.image-position}} {{item.image-class-show-hide}}" style="background-image: url('{{item._image}}');"></div>
+            <!-- Was sm-tall-50 before 50th Page was added -->
+            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-80 sm-tall-40 {{item.image-position}} {{item.image-class-show-hide}}" style="background-image: url('{{item._image}}');"></div>
         </div>
         {% endfor %}
     </div>
@@ -110,7 +114,3 @@ video: >-
 <!-- --------------------EMBEDDED MAP------------------- -->
 {% include embedded-map.html %}
 
-
-<!-- _image: /images/anniversary-banner-mobile.png
-    image-alt-text:
-    image-position: bg-pos-center -->

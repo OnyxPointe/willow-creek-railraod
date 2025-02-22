@@ -969,6 +969,7 @@ form textarea{min-height: 8rem;}
 
     /* -----------HEIGHT + WIDTH */
     .sm-tall-50{height:50vh;}
+    .sm-tall-40{height:40vh;}
     
     /* -----------BACKGROUNDS */
     .bg-membership{background-position: 95% 36%;}
