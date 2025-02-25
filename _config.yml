@@ -1,5 +1,3 @@
-permalink: /:title
-
 _select_data:
   aspect-ratios:
     - square
