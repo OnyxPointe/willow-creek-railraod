@@ -27,3 +27,5 @@ _select_data:
     bg-pos-bc: Bottom Center
     bg-pos-bl: Bottom Left
     bg-pos-br: Bottom Right
+
+permalink: /:title
