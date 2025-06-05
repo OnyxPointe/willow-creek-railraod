@@ -19,16 +19,19 @@ gallery:
     image-alt-text:
     image-position: bg-pos-bc
 gallery-two:
-  - _image: /images/merch-mug.jpg
+  - gallery_image: /images/merch-mug.jpg
     image-alt-text:
     image-position: bg-pos-tc
-  - _image: /images/merch-pin.jpg
+  - gallery_image: /images/merch-pin.jpg
     image-alt-text:
     image-position: bg-pos-tc
-  - _image: /images/merch-button.jpg
+  - gallery_image: /images/merch-button.jpg
     image-alt-text:
     image-position: bg-pos-center
-  - _image: /images/merch-stickers.jpg
+  - gallery_image: /images/merch-stickers.jpg
+    image-alt-text:
+    image-position: bg-pos-center
+  - gallery_image: /images/merch-stickers.jpg
     image-alt-text:
     image-position: bg-pos-center
 ---
@@ -162,19 +165,19 @@ gallery-two:
         </p>
     </div>
     <!-- -------- GALLERY ON MD+ SCREENS -------- -->
-    <div class="col-6_sm-12 padded grid tall-70 mobile-hide">
+    <!-- <div class="col-6_sm-12 padded grid tall-70 mobile-hide">
         <div class="col-7 bg-img-merch-1 border-tan-d"></div>
         <div class="col-5 bg-img-merch-2 border-tan-d"></div>
         <div class="col-5 bg-img-merch-3 border-tan-d"></div>
         <div class="col-7 bg-img-merch-4 border-tan-d"></div>
-    </div>
+    </div> -->
 
-    <!-- -------- GALLERY ON SM SCREENS --------- -->
-    <div class="slider-container col-6_sm-12 padded mobile-show">
+    <!-- -------- GALLERY ON ALL SCREENS --------- -->
+    <div class="slider-container col-6_sm-12 padded">
         {% for item in page.gallery-two %}
         <div class="slider-item">
             <!-- can use aria lable inplace of alt -->
-            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-40 sm-tall-50 {{item.image-position}}" style="background-image: url('{{item._image}}');"></div>
+            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-40 sm-tall-50 {{item.image-position}} editable" style="background-image: url('{{item.gallery_image}}');"></div>
         </div>
         {% endfor %}
     </div>
