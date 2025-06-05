@@ -174,11 +174,11 @@ gallery-two:
 
   
     <!-- -------- GALLERY ON MD+ SCREENS --------- -->
-   <div class="slider-container col-6_sm-12 padded mobile-hide tall-70">
+   <div class="slider-container col-6_sm-12 padded mobile-hide">
         {% for item in page.gallery-two %}
         <div class="slider-item">
             <!-- can use aria lable inplace of alt -->
-            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-40 sm-tall-50 {{item.image-position}} editable" style="background-image: url('{{item.gallery_image}}');"></div>
+            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-70 {{item.image-position}} editable" style="background-image: url('{{item.gallery_image}}');"></div>
         </div>
         {% endfor %}
     </div>
