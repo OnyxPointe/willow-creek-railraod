@@ -172,8 +172,20 @@ gallery-two:
         <div class="col-7 bg-img-merch-4 border-tan-d"></div>
     </div> -->
 
-    <!-- -------- GALLERY ON ALL SCREENS --------- -->
-    <div class="slider-container col-6_sm-12 padded">
+  
+    <!-- -------- GALLERY ON MD+ SCREENS --------- -->
+   <div class="slider-container col-6_sm-12 padded mobile-hide tall-70">
+        {% for item in page.gallery-two %}
+        <div class="slider-item">
+            <!-- can use aria lable inplace of alt -->
+            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-40 sm-tall-50 {{item.image-position}} editable" style="background-image: url('{{item.gallery_image}}');"></div>
+        </div>
+        {% endfor %}
+    </div>
+  
+
+    <!-- -------- GALLERY ON SM SCREENS --------- -->
+    <div class="slider-container col-6_sm-12 padded mobile-show">
         {% for item in page.gallery-two %}
         <div class="slider-item">
             <!-- can use aria lable inplace of alt -->
