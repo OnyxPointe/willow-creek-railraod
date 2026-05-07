@@ -29,7 +29,7 @@ video: >-
             <!-- can use aria lable inplace of alt -->
             <!-- Was tall-70 before 50th Page was added -->
             <!-- Was sm-tall-50 before 50th Page was added -->
-            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-80 sm-tall-40 {{item.image-position}} {{item.image-class-show-hide}}" style="background-image: url('{{item._image}}');"></div>
+            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-80 sm-tall-40 {{item.image-position}} {{item.image-class-show-hide}}" data-editable="image" style="background-image: url('{{item._image}}');"></div>
         </div>
         {% endfor %}
     </div>
