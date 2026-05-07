@@ -2,22 +2,6 @@
 layout: default
 title: WCRR Annual Memorial Meet
 seo-description:
-gallery:
-  - _image: /images/old-photo-1.jpg
-    image-alt-text:
-    image-position: bg-pos-tc
-  - _image: /images/old-photo-2.jpg
-    image-alt-text:
-    image-position: bg-pos-tc
-  - _image: /images/old-photo-3.jpg
-    image-alt-text:
-    image-position: bg-pos-tc
-  - _image: /images/old-photo-4.jpg
-    image-alt-text:
-    image-position: bg-pos-tc
-  - _image: /images/old-photo-5.jpg
-    image-alt-text:
-    image-position: bg-pos-bc
 gallery-two:
   - gallery_image: /images/merch-mug.jpg
     image-alt-text:
@@ -34,6 +18,22 @@ gallery-two:
   - gallery_image: /uploads/img-4463.jpg
     image-alt-text:
     image-position: bg-pos-b
+gallery:
+  - _image: /images/old-photo-1.jpg
+    image-alt-text:
+    image-position: bg-pos-tc
+  - _image: /images/old-photo-2.jpg
+    image-alt-text:
+    image-position: bg-pos-tc
+  - _image: /images/old-photo-3.jpg
+    image-alt-text:
+    image-position: bg-pos-tc
+  - _image: /images/old-photo-4.jpg
+    image-alt-text:
+    image-position: bg-pos-tc
+  - _image: /images/old-photo-5.jpg
+    image-alt-text:
+    image-position: bg-pos-bc
 ---
 <!-- --------------------HEADER SECTION---------------- -->
  <section class="padded bg-texture m-p"> 
@@ -46,21 +46,6 @@ gallery-two:
     </div>
  </section>
 
-<!-- --------------------HISTORY SECTION---------------- -->
-<section class="grid-center-middle padded m-p-t">
-    <div class="slider-container col-7_sm-12 padded">
-        {% for item in page.gallery %}
-        <div class="slider-item">
-            <!-- can use aria lable inplace of alt -->
-            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-70 sm-tall-50 {{item.image-position}}" style="background-image: url('{{item._image}}');"></div>
-        </div>
-        {% endfor %}
-    </div>
-    <div class="col-5_sm-12 padded">
-        <h3 class="sm-text underlined-yellow editable">50 Years of Railroading: 1975-2025</h3>
-        <p class="editable thin">Willow Creek Railroad Museum was started by just two individuals in 1975. Now, our membership includes almost 100 people. We give 15,000 train rides to the public annually, as one of fourteen museums and attractions at Powerland Heritage Park. We hope you will join us in celebrating 50 years of railroading history this summer!</p>
-    </div>
-</section>
 
 <!-- --------------------GENERAL PUBLIC ---------------- -->
  <section class="padded-lg bg-dark-tan">
@@ -217,6 +202,22 @@ gallery-two:
     </div>
 </section>
 
+
+<!-- --------------------HISTORY SECTION---------------- -->
+<section class="grid-center-middle padded m-p-t">
+    <div class="slider-container col-7_sm-12 padded">
+        {% for item in page.gallery %}
+        <div class="slider-item">
+            <!-- can use aria lable inplace of alt -->
+            <div role="img" alt="{{item.image-alt-text}}" class="bg-image-index tall-70 sm-tall-50 {{item.image-position}}" style="background-image: url('{{item._image}}');"></div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="col-5_sm-12 padded">
+        <h3 class="sm-text underlined-yellow editable">50 Years of Railroading: 1975-2025</h3>
+        <p class="editable thin">Willow Creek Railroad Museum was started by just two individuals in 1975. Now, our membership includes almost 100 people. We give 15,000 train rides to the public annually, as one of fourteen museums and attractions at Powerland Heritage Park. We hope you will join us in celebrating 50 years of railroading history this summer!</p>
+    </div>
+</section>
 
 <!-- --------------------CTA - SEE YOU------------------- -->
 {% include embedded-map-two.html %}
